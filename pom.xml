@@ -31,20 +31,38 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+		<dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter</artifactId>
+           <exclusions>
+               <exclusion>
+                   <groupId>org.springframework.boot</groupId>
+                   <artifactId>spring-boot-starter-logging</artifactId>
+               </exclusion>
+           </exclusions>
+       </dependency>
+       <dependency> 
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
 		<!-- 热部署支持 -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>springloaded</artifactId>
-		</dependency> -->
-		<!-- <dependency>
+		</dependency>
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-devtools</artifactId> 
+			<optional>true</optional> </dependency> -->
+		<!-- optional=true,依赖不会传递，该项目依赖devtools；之后依赖myboot项目的项目如果想要使用devtools，需要重新引入 -->
+		<!-- SpringBoot监控模块 -->
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<optional>true</optional>optional=true,依赖不会传递，该项目依赖devtools；之后依赖myboot项目的项目如果想要使用devtools，需要重新引入
-		</dependency> -->
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
-			<version>1.0.25</version>
+			<version>1.1.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
 		<dependency>
@@ -56,7 +74,23 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			</dependency>
+		</dependency>
+		<!-- shiro -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-core</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-web</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>1.2.4</version>
+		</dependency>
 	</dependencies>
 	<!-- spring-boot提供的插件，打包成可执行程序 -->
 	<build>
@@ -64,6 +98,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork><!-- 如果没有该项配置，肯呢个devtools不会起作用，即应用不会restart -->
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

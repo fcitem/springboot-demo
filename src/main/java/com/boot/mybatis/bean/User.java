@@ -1,23 +1,33 @@
 package com.boot.mybatis.bean;
 
 public class User {
-    private String userid;
+    private String userId;
 
-    private String username;
+    private String userName;
 
-    public String getUserid() {
-        return userid;
+    private String userPasswd;
+
+    public String getUserId() {
+        return userId;
     }
 
-    public void setUserid(String userid) {
-        this.userid = userid == null ? null : userid.trim();
+    public void setUserId(String userId) {
+        this.userId = userId == null ? null : userId.trim();
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
+    public void setUserName(String userName) {
+        this.userName = userName == null ? null : userName.trim();
+    }
+
+    public String getUserPasswd() {
+        return userPasswd;
+    }
+
+    public void setUserPasswd(String userPasswd) {
+        this.userPasswd = userPasswd == null ? null : userPasswd.trim();
     }
 }

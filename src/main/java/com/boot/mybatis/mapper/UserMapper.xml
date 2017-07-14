@@ -2,8 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.boot.mybatis.dao.UserMapper" >
   <resultMap id="BaseResultMap" type="com.boot.mybatis.bean.User" >
-    <id column="userId" property="userid" jdbcType="VARCHAR" />
-    <result column="userName" property="username" jdbcType="VARCHAR" />
+    <id column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="user_passwd" property="userPasswd" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -64,7 +65,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    userId, userName
+    user_id, user_name, user_passwd
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.boot.mybatis.bean.UserExample" >
     select
@@ -73,7 +74,7 @@
     </if>
     'true' as QUERYID,
     <include refid="Base_Column_List" />
-    from test
+    from user
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
@@ -84,56 +85,67 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 
     <include refid="Base_Column_List" />
-    from test
-    where userId = #{userid,jdbcType=VARCHAR}
+    from user
+    where user_id = #{userId,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
-    delete from test
-    where userId = #{userid,jdbcType=VARCHAR}
+    delete from user
+    where user_id = #{userId,jdbcType=VARCHAR}
   </delete>
   <delete id="deleteByExample" parameterType="com.boot.mybatis.bean.UserExample" >
-    delete from test
+    delete from user
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.boot.mybatis.bean.User" >
-    insert into test (userId, userName)
-    values (#{userid,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR})
+    insert into user (user_id, user_name, user_passwd
+      )
+    values (#{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{userPasswd,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.boot.mybatis.bean.User" >
-    insert into test
+    insert into user
     <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="userid != null" >
-        userId,
+      <if test="userId != null" >
+        user_id,
       </if>
-      <if test="username != null" >
-        userName,
+      <if test="userName != null" >
+        user_name,
+      </if>
+      <if test="userPasswd != null" >
+        user_passwd,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="userid != null" >
-        #{userid,jdbcType=VARCHAR},
+      <if test="userId != null" >
+        #{userId,jdbcType=VARCHAR},
       </if>
-      <if test="username != null" >
-        #{username,jdbcType=VARCHAR},
+      <if test="userName != null" >
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPasswd != null" >
+        #{userPasswd,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.boot.mybatis.bean.UserExample" resultType="java.lang.Integer" >
-    select count(*) from test
+    select count(*) from user
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map" >
-    update test
+    update user
     <set >
-      <if test="record.userid != null" >
-        userId = #{record.userid,jdbcType=VARCHAR},
+      <if test="record.userId != null" >
+        user_id = #{record.userId,jdbcType=VARCHAR},
       </if>
-      <if test="record.username != null" >
-        userName = #{record.username,jdbcType=VARCHAR},
+      <if test="record.userName != null" >
+        user_name = #{record.userName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userPasswd != null" >
+        user_passwd = #{record.userPasswd,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null" >
@@ -141,25 +153,30 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map" >
-    update test
-    set userId = #{record.userid,jdbcType=VARCHAR},
-      userName = #{record.username,jdbcType=VARCHAR}
+    update user
+    set user_id = #{record.userId,jdbcType=VARCHAR},
+      user_name = #{record.userName,jdbcType=VARCHAR},
+      user_passwd = #{record.userPasswd,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.boot.mybatis.bean.User" >
-    update test
+    update user
     <set >
-      <if test="username != null" >
-        userName = #{username,jdbcType=VARCHAR},
+      <if test="userName != null" >
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPasswd != null" >
+        user_passwd = #{userPasswd,jdbcType=VARCHAR},
       </if>
     </set>
-    where userId = #{userid,jdbcType=VARCHAR}
+    where user_id = #{userId,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.boot.mybatis.bean.User" >
-    update test
-    set userName = #{username,jdbcType=VARCHAR}
-    where userId = #{userid,jdbcType=VARCHAR}
+    update user
+    set user_name = #{userName,jdbcType=VARCHAR},
+      user_passwd = #{userPasswd,jdbcType=VARCHAR}
+    where user_id = #{userId,jdbcType=VARCHAR}
   </update>
 </mapper>

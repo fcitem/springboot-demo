@@ -8,9 +8,13 @@ import org.springframework.context.annotation.Configuration;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
 
+/**
+ * 配置Druid性能监控Servlet
+ * @author fengchao
+ * @data 2017年6月29日
+ */
 @Configuration
-
-public class DruidConfig {
+public class DruidServletConfig {
 
 	/**
 	 * 注册druid的Servlet处理类
@@ -26,7 +30,7 @@ public class DruidConfig {
 		//ip黑名单
 		servletRegistrationBean.addInitParameter("deny", "192.168.0.34");
 		//设置用户名
-		servletRegistrationBean.addInitParameter("loginUsername","admin2");
+		servletRegistrationBean.addInitParameter("loginUsername","admin");
 		//登录密码设置
 		servletRegistrationBean.addInitParameter("loginPassword", "1234");
 		//是否能够重置数据

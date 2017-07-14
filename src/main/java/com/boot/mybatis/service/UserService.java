@@ -13,7 +13,7 @@ public interface UserService {
 
     int deleteByExample(UserExample example);
 
-    int deleteByPrimaryKey(String userid);
+    int deleteByPrimaryKey(String userId);
 
     int insert(User record);
 
@@ -21,7 +21,7 @@ public interface UserService {
 
     List<User> selectByExample(UserExample example);
 
-    User selectByPrimaryKey(String userid);
+    User selectByPrimaryKey(String userId);
 
     int updateByExampleSelective(@Param("record") User record, @Param("example") UserExample example);
 

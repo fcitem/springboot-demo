@@ -45,6 +45,7 @@ public class SessionFactoryConfig implements TransactionManagementConfigurer{
 		/**设置typeAlias 包扫描路径**/
 		bean.setTypeAliasesPackage(typeAliasPackage);
 		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+		bean.setConfigLocation(resolver.getResource("classpath:mybatis-config.xml"));
 		bean.setMapperLocations(resolver.getResources("classpath:com/boot/mybatis/mapper/*.xml"));
 		return bean;
 	}

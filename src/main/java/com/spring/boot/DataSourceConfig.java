@@ -46,6 +46,9 @@ public class DataSourceConfig {
 		dataSource.setMaxWait(maxWait);
 		//设置为stat,不然无法显示SQL监控检测信息
 		dataSource.setFilters("stat");
+		//orcle开启Pscache功能
+		dataSource.setPoolPreparedStatements(true);
+		dataSource.setMaxPoolPreparedStatementPerConnectionSize(100);
 		return dataSource;
 	}
 }

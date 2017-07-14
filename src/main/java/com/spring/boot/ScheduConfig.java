@@ -17,6 +17,6 @@ public class ScheduConfig {
 	@Scheduled(cron="0/20 * * * * ?")  //每20秒执行一次
 	public void scheduler(){
 		count++;
-		System.out.println("第"+count+"次执行任务");
+		System.out.println("第"+count+"次执行定时任务");
 	}
 }

@@ -1,4 +1,4 @@
-package com.spring.boot;
+package com.spring.boot.shiro;
 
 import org.apache.shiro.authc.credential.DefaultPasswordService;
 import org.apache.shiro.authc.credential.PasswordMatcher;
@@ -17,6 +17,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.spring.boot.DataSourceConfig;
 
 /**
  * shiro集成配置

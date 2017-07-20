@@ -3,7 +3,8 @@
 <!--                 配置mybatis启用log4j日志记录             -->
 <configuration>  
     <settings>  
-         <setting name="logImpl" value="LOG4J" />
+    <!--  mybatis原则上是不支持logback，但是logback是SLF4J的完美实现者   -->
+         <setting name="logImpl" value="SLF4J" />
          <!--  开启二级缓存	-->
         <!--  <setting name="cacheEnabled" value="true"/> -->
     </settings>  

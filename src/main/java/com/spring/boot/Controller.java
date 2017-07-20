@@ -3,12 +3,12 @@ package com.spring.boot;
 import java.util.List;
 import java.util.UUID;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.authc.credential.PasswordMatcher;
 import org.apache.shiro.subject.Subject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,11 +28,11 @@ import com.boot.mybatis.service.UserService;
 @RequestMapping("/test")
 public class Controller {
 
-	Logger log=LogManager.getLogger(this.getClass().getName());
 	@Autowired UserService service;
 	
 	@Autowired PasswordMatcher passwordMatcher;
 	
+	private static Logger logger=LoggerFactory.getLogger(Controller.class);
 	@RequestMapping("/")
     private String home() {
         return "Hello World!";
@@ -69,7 +69,7 @@ public class Controller {
 	}
 	@RequestMapping("login")
 	public void login(){
-		log.info("测试");
+		logger.info("测试");
 		Subject sub=SecurityUtils.getSubject();
 		UsernamePasswordToken token=new UsernamePasswordToken("fc2","1234");
 		try{

@@ -1,4 +1,4 @@
-package com.spring.boot;
+package com.spring.boot.web;
 
 import java.util.List;
 import java.util.UUID;
@@ -63,17 +63,19 @@ public class Controller {
 		String password="1234";
 		String userId=UUID.randomUUID().toString().replaceAll("-","").substring(0, 32);
 		user.setUserId(userId);
+		user.setLoginId("fc");
 		user.setUserName(userName);
-		user.setUserPasswd(passwordMatcher.getPasswordService().encryptPassword(password));
+		user.setUserPwd(passwordMatcher.getPasswordService().encryptPassword(password));
 		service.insertSelective(user);
 	}
 	@RequestMapping("login")
 	public void login(){
 		logger.info("测试");
 		Subject sub=SecurityUtils.getSubject();
-		UsernamePasswordToken token=new UsernamePasswordToken("fc2","1234");
+		UsernamePasswordToken token=new UsernamePasswordToken("fc","1234");
 		try{
 			sub.login(token);
+			sub.hasRole("dede");
 			System.out.println(token.getPrincipal()+":验证通过");
 		}catch (Exception e) {
 			e.printStackTrace();

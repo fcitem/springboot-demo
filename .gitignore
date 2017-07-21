@@ -1,1 +1,5 @@
 /target/
+/pom.xml
+/generatorConfig.xml
+/.settings/
+/log/

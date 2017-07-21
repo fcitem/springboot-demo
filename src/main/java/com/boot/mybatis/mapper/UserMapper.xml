@@ -2,9 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.boot.mybatis.dao.UserMapper" >
   <resultMap id="BaseResultMap" type="com.boot.mybatis.bean.User" >
-    <id column="user_id" property="userId" jdbcType="VARCHAR" />
-    <result column="user_name" property="userName" jdbcType="VARCHAR" />
-    <result column="user_passwd" property="userPasswd" jdbcType="VARCHAR" />
+    <id column="USER_ID" property="userId" jdbcType="VARCHAR" />
+    <result column="USER_NAME" property="userName" jdbcType="OTHER" />
+    <result column="LOGIN_ID" property="loginId" jdbcType="VARCHAR" />
+    <result column="USER_PWD" property="userPwd" jdbcType="OTHER" />
+    <result column="CREATE_TIME" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="STATUS" property="status" jdbcType="DECIMAL" />
+    <result column="EMAIL" property="email" jdbcType="OTHER" />
+    <result column="TELEPHONE" property="telephone" jdbcType="OTHER" />
+    <result column="USER_DESC" property="userDesc" jdbcType="OTHER" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -65,7 +71,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    user_id, user_name, user_passwd
+    USER_ID, USER_NAME, LOGIN_ID, USER_PWD, CREATE_TIME, STATUS, EMAIL, TELEPHONE, USER_DESC
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.boot.mybatis.bean.UserExample" >
     select
@@ -74,7 +80,7 @@
     </if>
     'true' as QUERYID,
     <include refid="Base_Column_List" />
-    from user
+    from SYS_USER
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
@@ -85,36 +91,58 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 
     <include refid="Base_Column_List" />
-    from user
-    where user_id = #{userId,jdbcType=VARCHAR}
+    from SYS_USER
+    where USER_ID = #{userId,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
-    delete from user
-    where user_id = #{userId,jdbcType=VARCHAR}
+    delete from SYS_USER
+    where USER_ID = #{userId,jdbcType=VARCHAR}
   </delete>
   <delete id="deleteByExample" parameterType="com.boot.mybatis.bean.UserExample" >
-    delete from user
+    delete from SYS_USER
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.boot.mybatis.bean.User" >
-    insert into user (user_id, user_name, user_passwd
+    insert into SYS_USER (USER_ID, USER_NAME, LOGIN_ID, 
+      USER_PWD, CREATE_TIME, STATUS, 
+      EMAIL, TELEPHONE, USER_DESC
       )
-    values (#{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{userPasswd,jdbcType=VARCHAR}
+    values (#{userId,jdbcType=VARCHAR}, #{userName,jdbcType=OTHER}, #{loginId,jdbcType=VARCHAR}, 
+      #{userPwd,jdbcType=OTHER}, #{createTime,jdbcType=TIMESTAMP}, #{status,jdbcType=DECIMAL}, 
+      #{email,jdbcType=OTHER}, #{telephone,jdbcType=OTHER}, #{userDesc,jdbcType=OTHER}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.boot.mybatis.bean.User" >
-    insert into user
+    insert into SYS_USER
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="userId != null" >
-        user_id,
+        USER_ID,
       </if>
       <if test="userName != null" >
-        user_name,
+        USER_NAME,
       </if>
-      <if test="userPasswd != null" >
-        user_passwd,
+      <if test="loginId != null" >
+        LOGIN_ID,
+      </if>
+      <if test="userPwd != null" >
+        USER_PWD,
+      </if>
+      <if test="createTime != null" >
+        CREATE_TIME,
+      </if>
+      <if test="status != null" >
+        STATUS,
+      </if>
+      <if test="email != null" >
+        EMAIL,
+      </if>
+      <if test="telephone != null" >
+        TELEPHONE,
+      </if>
+      <if test="userDesc != null" >
+        USER_DESC,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
@@ -122,30 +150,66 @@
         #{userId,jdbcType=VARCHAR},
       </if>
       <if test="userName != null" >
-        #{userName,jdbcType=VARCHAR},
+        #{userName,jdbcType=OTHER},
       </if>
-      <if test="userPasswd != null" >
-        #{userPasswd,jdbcType=VARCHAR},
+      <if test="loginId != null" >
+        #{loginId,jdbcType=VARCHAR},
+      </if>
+      <if test="userPwd != null" >
+        #{userPwd,jdbcType=OTHER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=OTHER},
+      </if>
+      <if test="telephone != null" >
+        #{telephone,jdbcType=OTHER},
+      </if>
+      <if test="userDesc != null" >
+        #{userDesc,jdbcType=OTHER},
       </if>
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.boot.mybatis.bean.UserExample" resultType="java.lang.Integer" >
-    select count(*) from user
+    select count(*) from SYS_USER
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map" >
-    update user
+    update SYS_USER
     <set >
       <if test="record.userId != null" >
-        user_id = #{record.userId,jdbcType=VARCHAR},
+        USER_ID = #{record.userId,jdbcType=VARCHAR},
       </if>
       <if test="record.userName != null" >
-        user_name = #{record.userName,jdbcType=VARCHAR},
+        USER_NAME = #{record.userName,jdbcType=OTHER},
       </if>
-      <if test="record.userPasswd != null" >
-        user_passwd = #{record.userPasswd,jdbcType=VARCHAR},
+      <if test="record.loginId != null" >
+        LOGIN_ID = #{record.loginId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userPwd != null" >
+        USER_PWD = #{record.userPwd,jdbcType=OTHER},
+      </if>
+      <if test="record.createTime != null" >
+        CREATE_TIME = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.status != null" >
+        STATUS = #{record.status,jdbcType=DECIMAL},
+      </if>
+      <if test="record.email != null" >
+        EMAIL = #{record.email,jdbcType=OTHER},
+      </if>
+      <if test="record.telephone != null" >
+        TELEPHONE = #{record.telephone,jdbcType=OTHER},
+      </if>
+      <if test="record.userDesc != null" >
+        USER_DESC = #{record.userDesc,jdbcType=OTHER},
       </if>
     </set>
     <if test="_parameter != null" >
@@ -153,30 +217,60 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map" >
-    update user
-    set user_id = #{record.userId,jdbcType=VARCHAR},
-      user_name = #{record.userName,jdbcType=VARCHAR},
-      user_passwd = #{record.userPasswd,jdbcType=VARCHAR}
+    update SYS_USER
+    set USER_ID = #{record.userId,jdbcType=VARCHAR},
+      USER_NAME = #{record.userName,jdbcType=OTHER},
+      LOGIN_ID = #{record.loginId,jdbcType=VARCHAR},
+      USER_PWD = #{record.userPwd,jdbcType=OTHER},
+      CREATE_TIME = #{record.createTime,jdbcType=TIMESTAMP},
+      STATUS = #{record.status,jdbcType=DECIMAL},
+      EMAIL = #{record.email,jdbcType=OTHER},
+      TELEPHONE = #{record.telephone,jdbcType=OTHER},
+      USER_DESC = #{record.userDesc,jdbcType=OTHER}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.boot.mybatis.bean.User" >
-    update user
+    update SYS_USER
     <set >
       <if test="userName != null" >
-        user_name = #{userName,jdbcType=VARCHAR},
+        USER_NAME = #{userName,jdbcType=OTHER},
       </if>
-      <if test="userPasswd != null" >
-        user_passwd = #{userPasswd,jdbcType=VARCHAR},
+      <if test="loginId != null" >
+        LOGIN_ID = #{loginId,jdbcType=VARCHAR},
+      </if>
+      <if test="userPwd != null" >
+        USER_PWD = #{userPwd,jdbcType=OTHER},
+      </if>
+      <if test="createTime != null" >
+        CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        STATUS = #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="email != null" >
+        EMAIL = #{email,jdbcType=OTHER},
+      </if>
+      <if test="telephone != null" >
+        TELEPHONE = #{telephone,jdbcType=OTHER},
+      </if>
+      <if test="userDesc != null" >
+        USER_DESC = #{userDesc,jdbcType=OTHER},
       </if>
     </set>
-    where user_id = #{userId,jdbcType=VARCHAR}
+    where USER_ID = #{userId,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.boot.mybatis.bean.User" >
-    update user
-    set user_name = #{userName,jdbcType=VARCHAR},
-      user_passwd = #{userPasswd,jdbcType=VARCHAR}
-    where user_id = #{userId,jdbcType=VARCHAR}
+    update SYS_USER
+    set USER_NAME = #{userName,jdbcType=OTHER},
+      LOGIN_ID = #{loginId,jdbcType=VARCHAR},
+      USER_PWD = #{userPwd,jdbcType=OTHER},
+      CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+      STATUS = #{status,jdbcType=DECIMAL},
+      EMAIL = #{email,jdbcType=OTHER},
+      TELEPHONE = #{telephone,jdbcType=OTHER},
+      USER_DESC = #{userDesc,jdbcType=OTHER}
+    where USER_ID = #{userId,jdbcType=VARCHAR}
   </update>
 </mapper>

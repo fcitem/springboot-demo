@@ -1,4 +1,4 @@
-package com.spring.boot;
+package com.spring.boot.druid;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;

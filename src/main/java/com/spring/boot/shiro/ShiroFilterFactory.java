@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.spring.boot.DataSourceConfig;
+import com.spring.boot.druid.DataSourceConfig;
 
 /**
  * shiro集成配置
@@ -25,11 +25,8 @@ import com.spring.boot.DataSourceConfig;
  * @data 2017年6月28日
  */
 @Configuration
-@Import(DataSourceConfig.class)
+@Import({DataSourceConfig.class})
 public class ShiroFilterFactory {
-
-	/*@Autowired
-	DruidDataSource dataSource;*/
 	/**
 	 * shiro过滤器入口
 	 * @author fengchao
@@ -51,16 +48,19 @@ public class ShiroFilterFactory {
 	@Bean
 	public SecurityManager getSecurityManager(DruidDataSource dataSource){
 		DefaultWebSecurityManager securityManager=new DefaultWebSecurityManager();
-		securityManager.setRealm(getJdbcRealm(dataSource));      //设置安全数据源域
+//		securityManager.setRealm(getJdbcRealm(dataSource));      //设置安全数据源域
+		MyRealm realm=new MyRealm(getPasswordMatcher());
+		securityManager.setRealm(realm);
 		securityManager.setSessionManager(getSessionManager());    //设置安全管理器
 		return securityManager;
 	}
+	@Bean
 	/**
 	 * shiro的real安全数据源
 	 * @author fengchao
 	 * @data 2017年6月28日
 	 */
-	@Bean
+	/*@Bean*/
 	public JdbcRealm getJdbcRealm(DruidDataSource dataSource){
 		JdbcRealm realm=new JdbcRealm();
 		realm.setDataSource(dataSource);

@@ -1,4 +1,4 @@
-package com.spring.boot;
+package com.spring.boot.util;
 
 import javax.servlet.http.HttpServletRequest;
 

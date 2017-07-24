@@ -11,11 +11,9 @@ import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.LockedAccountException;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authc.UnknownAccountException;
-import org.apache.shiro.authc.credential.DefaultPasswordService;
 import org.apache.shiro.authc.credential.PasswordMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
-import org.apache.shiro.crypto.hash.DefaultHashService;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 
@@ -61,7 +59,7 @@ public class MyRealm extends AuthorizingRealm {
 		}else{
 			user=list.get(0);
 		}
-		if ("0".equals(list.get(0).getStatus())) {
+		if ("0".equals(list.get(0).getStatus().toString())) {
 			throw new LockedAccountException();                  //账号被锁定
 		}
 		String password=user.getUserPwd().toString();  //获取数据库的凭证
@@ -93,22 +91,4 @@ public class MyRealm extends AuthorizingRealm {
 		authorizationInfo.setStringPermissions(stringPermissions);
 		return authorizationInfo;
 	}
-	
-	/**
-	 * 设置密码匹配器
-	 * @author fengchao
-	 * @date 2017年7月21日
-	 */
-	public PasswordMatcher getPasswordMatcher(){
-		PasswordMatcher matcher=new PasswordMatcher();
-		DefaultPasswordService passwdService=new DefaultPasswordService();
-		DefaultHashService hashService=new DefaultHashService();   //散列
-		hashService.setHashAlgorithmName("md5");                //md5的方式散列
-		hashService.setGeneratePublicSalt(true);                //产生公有salt
-		hashService.setHashIterations(2);                     //迭代2次
-		passwdService.setHashService(hashService);
-	    matcher.setPasswordService(passwdService);
-	    return matcher;
-	}
-
 }

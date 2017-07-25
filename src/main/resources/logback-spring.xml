@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
+    <!--  上下文名称	-->
+    <contextName>SpringBootDemo</contextName>
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
 			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n
 			</pattern>
 		</encoder>
 	</appender>
-
+     <!--  获取时间戳字符串   -->
 	<timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss" />
 
 	<appender name="FILE" class="ch.qos.logback.core.FileAppender">

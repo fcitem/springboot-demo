@@ -4,6 +4,7 @@
 
 	<groupId>com.fc.springBoot</groupId>
 	<artifactId>SpringBootDemo</artifactId>
+	<packaging>pom</packaging>
 	<version>0.0.1</version>
 
 	<name>Maven</name>
@@ -92,4 +93,7 @@
 			</plugin>
 		</plugins>
 	</build>
+	<modules>
+		<module>webModule</module>
+	</modules>
 </project>

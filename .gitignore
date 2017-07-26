@@ -3,3 +3,4 @@
 /generatorConfig.xml
 /.settings/
 /log/
+/src/main/resources/jdbc.properties

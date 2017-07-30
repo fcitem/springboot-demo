@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
-    <!--  上下文名称	-->
-    <contextName>SpringBootDemo</contextName>
+	<!-- 上下文名称 -->
+	<contextName>SpringBootDemo</contextName>
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
 			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n
 			</pattern>
+			<charset>GBK</charset>
 		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+		  <level>debug</level>
+		</filter>
 	</appender>
-     <!--  获取时间戳字符串   -->
+	<!-- 获取时间戳字符串 -->
 	<timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss" />
 
 	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
 		<file>log/file-${bySecond}.log</file>
 		<append>true</append>
 		<encoder>
-			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n
-			</pattern>
+			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+			<charset class="java.nio.charset.Charset">GBK</charset>
 		</encoder>
 	</appender>
 	<!-- 滚动文件 -->
-	<appender name="DAYFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>log/RollingFile.log</file>
+	<appender name="INFO"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>log/RollingFile-info.log</file>
 		<!-- 当发生滚动时，决定RollingFileAppender的行为 TimeBasedRollingPolicy(根据时间来制定滚动策略) -->
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<fileNamePattern>logFile-info.%d{yyyy-MM-dd}.log</fileNamePattern>
 			<!-- 控制保留的归档文件的最大数量，超出数量就删除旧文件 -->
 			<maxHistory>30</maxHistory>
 			<totalSizeCap>3GB</totalSizeCap>
@@ -32,26 +37,148 @@
 		<!-- 以上配置表示每天生成一个日志文件，保存30天的日志文件 -->
 		<!--级别过滤器,根据日志级别进行过滤,如果日志级别等于配置级别,过滤器会根据onMath 和 onMismatch接收或拒绝日志 -->
 		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>INFO</level>   <!--  设置过滤级别    -->
-			<!--  ACCEPT，日志会被立即处理，不再经过剩余过滤器-->
-			<onMatch>ACCEPT</onMatch>  <!--  配置符合过滤条件的操作-->
-			<!--  DENY，日志将立即被抛弃不再经过其他过滤器     -->
-			<onMismatch>DENY</onMismatch>  <!--  配置不符合过滤条件的操作  -->
-			<!--  NEUTRAL，有序列表里的下个过滤器过接着处理日志 -->
+			<level>INFO</level>   <!-- 设置过滤级别 -->
+			<!-- ACCEPT，日志会被立即处理，不再经过剩余过滤器 -->
+			<onMatch>ACCEPT</onMatch>  <!-- 配置符合过滤条件的操作 -->
+			<!-- DENY，日志将立即被抛弃不再经过其他过滤器 -->
+			<onMismatch>DENY</onMismatch>  <!-- 配置不符合过滤条件的操作 -->
+			<!-- NEUTRAL，有序列表里的下个过滤器过接着处理日志 -->
 		</filter>
 		<encoder>
 			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n
 			</pattern>
 		</encoder>
 	</appender>
-	<!--  mybatis日志文件配置	-->
-	<logger name="com.apache.ibatis" level="TRACE" />
-	<logger name="java.sql.Connection" level="DEBUG" />
-	<logger name="java.sql.Statement" level="DEBUG" />
-	<logger name="java.sql.PreparedStatement" level="DEBUG" />
+	<appender name="ERROR"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>log/RollingFile-error.log</file>
+		<!-- 当发生滚动时，决定RollingFileAppender的行为 TimeBasedRollingPolicy(根据时间来制定滚动策略) -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>logFile-error.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<!-- 控制保留的归档文件的最大数量，超出数量就删除旧文件 -->
+			<maxHistory>30</maxHistory>
+			<totalSizeCap>3GB</totalSizeCap>
+		</rollingPolicy>
+		<!-- 以上配置表示每天生成一个日志文件，保存30天的日志文件 -->
+		<!--级别过滤器,根据日志级别进行过滤,如果日志级别等于配置级别,过滤器会根据onMath 和 onMismatch接收或拒绝日志 -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>   <!-- 设置过滤级别 -->
+			<!-- ACCEPT，日志会被立即处理，不再经过剩余过滤器 -->
+			<onMatch>ACCEPT</onMatch>  <!-- 配置符合过滤条件的操作 -->
+			<!-- DENY，日志将立即被抛弃不再经过其他过滤器 -->
+			<onMismatch>DENY</onMismatch>  <!-- 配置不符合过滤条件的操作 -->
+			<!-- NEUTRAL，有序列表里的下个过滤器过接着处理日志 -->
+		</filter>
+		<encoder>
+			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	<appender name="DEBUG"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>log/RollingFile-debug.log</file>
+		<!-- 当发生滚动时，决定RollingFileAppender的行为 TimeBasedRollingPolicy(根据时间来制定滚动策略) -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>logFile-debug.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<!-- 控制保留的归档文件的最大数量，超出数量就删除旧文件 -->
+			<maxHistory>30</maxHistory>
+			<totalSizeCap>3GB</totalSizeCap>
+		</rollingPolicy>
+		<!-- 以上配置表示每天生成一个日志文件，保存30天的日志文件 -->
+		<!--级别过滤器,根据日志级别进行过滤,如果日志级别等于配置级别,过滤器会根据onMath 和 onMismatch接收或拒绝日志 -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>   <!-- 设置过滤级别 -->
+			<!-- ACCEPT，日志会被立即处理，不再经过剩余过滤器 -->
+			<onMatch>ACCEPT</onMatch>  <!-- 配置符合过滤条件的操作 -->
+			<!-- DENY，日志将立即被抛弃不再经过其他过滤器 -->
+			<onMismatch>DENY</onMismatch>  <!-- 配置不符合过滤条件的操作 -->
+			<!-- NEUTRAL，有序列表里的下个过滤器过接着处理日志 -->
+		</filter>
+		<encoder>
+			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	<appender name="test"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>log/test-debug.log</file>
+		<!-- 当发生滚动时，决定RollingFileAppender的行为 TimeBasedRollingPolicy(根据时间来制定滚动策略) -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>logFile-test.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<!-- 控制保留的归档文件的最大数量，超出数量就删除旧文件 -->
+			<maxHistory>30</maxHistory>
+			<totalSizeCap>3GB</totalSizeCap>
+		</rollingPolicy>
+		<!-- 以上配置表示每天生成一个日志文件，保存30天的日志文件 -->
+		<!--级别过滤器,根据日志级别进行过滤,如果日志级别等于配置级别,过滤器会根据onMath 和 onMismatch接收或拒绝日志 -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>   <!-- 设置过滤级别 -->
+			<!-- ACCEPT，日志会被立即处理，不再经过剩余过滤器 -->
+			<onMatch>ACCEPT</onMatch>  <!-- 配置符合过滤条件的操作 -->
+			<!-- DENY，日志将立即被抛弃不再经过其他过滤器 -->
+			<onMismatch>DENY</onMismatch>  <!-- 配置不符合过滤条件的操作 -->
+			<!-- NEUTRAL，有序列表里的下个过滤器过接着处理日志 -->
+		</filter>
+		<encoder>
+			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	<appender name="mybatis"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>log/mybatis.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- daily rollover -->
+			<fileNamePattern>logFile-mybatis.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<!-- keep 30 days worth of history -->
+			<maxHistory>30</maxHistory>
+			<totalSizeCap>20MB</totalSizeCap>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>   <!-- 设置过滤级别 -->
+			<!-- ACCEPT，日志会被立即处理，不再经过剩余过滤器 -->
+			<onMatch>ACCEPT</onMatch>  <!-- 配置符合过滤条件的操作 -->
+			<!-- DENY，日志将立即被抛弃不再经过其他过滤器 -->
+			<onMismatch>DENY</onMismatch>  <!-- 配置不符合过滤条件的操作 -->
+			<!-- NEUTRAL，有序列表里的下个过滤器过接着处理日志 -->
+		</filter>
+		<encoder>
+			<pattern>
+				%d{HH:mm:ss.SSS} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	<!-- mybatis日志文件配置 -->
+	<logger name="com.apache.ibatis" additivity="false" level="debug">
+		<!-- <level>ALL</level>
+		<appender-ref ref="mybatis" /> -->
+	</logger>
+	<logger name="java.sql.Connection" additivity="false" level="debug">
+		<!-- <level>ALL</level>
+		<appender-ref ref="mybatis" /> -->
+	</logger>
+	<logger name="java.sql.Statement" additivity="false" level="debug">
+		<!-- <level>ALL</level>
+		<appender-ref ref="mybatis" /> -->
+	</logger>
+	<logger name="com.spring.boot.web.Controller" additivity="false" level="debug">
+	   <!--  <level>DEBUG</level> -->
+	    <appender-ref ref="test" />
+	</logger>
+	<!-- <logger name="java.sql.PreparedStatement" additivity="false">
+		<level>ALL</level>
+		<appender-ref ref="mybatis" />
+	</logger> -->
+	<!-- <logger name="org.springframework" level="DEBUG" additivity="false">
+		<appender-ref ref="DEBUG"></appender-ref>
+		<appender-ref ref="INFO"></appender-ref>
+		<appender-ref ref="ERROR"></appender-ref>
+	</logger> --> 
 	<root level="debug">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="DAYFILE" />
+		<appender-ref ref="INFO" />
+		<appender-ref ref="ERROR" />
+		<appender-ref ref="DEBUG" />
 		<appender-ref ref="FILE" />
 	</root>
 </configuration>

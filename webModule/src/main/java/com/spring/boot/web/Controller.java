@@ -70,7 +70,7 @@ public class Controller {
 	}
 	@RequestMapping("login")
 	public void login(){
-		logger.info("测试");
+		logger.info("****************测试*****************");
 		Subject sub=SecurityUtils.getSubject();
 		UsernamePasswordToken token=new UsernamePasswordToken("fc","1234");
 		try{
@@ -79,6 +79,8 @@ public class Controller {
 			System.out.println(token.getPrincipal()+":验证通过");
 		}catch (Exception e) {
 			e.printStackTrace();
+			logger.error("异常:",e);
+			logger.error("验证失败");
 			System.out.println(token.getPrincipal()+":验证失败");
 		}
 	}

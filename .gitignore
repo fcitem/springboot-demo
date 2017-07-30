@@ -2,5 +2,5 @@
 /pom.xml
 /generatorConfig.xml
 /.settings/
-/log/
-/src/main/resources/jdbc.properties
+/webModule/log/
+/webModule/src/main/resources/jdbc.properties

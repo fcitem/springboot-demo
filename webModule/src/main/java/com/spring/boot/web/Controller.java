@@ -76,7 +76,7 @@ public class Controller {
 		try{
 			sub.login(token);
 			sub.hasRole("dede");
-			System.out.println(token.getPrincipal()+":验证通过");
+			logger.info(token.getPrincipal()+":验证通过");
 		}catch (Exception e) {
 			e.printStackTrace();
 			logger.error("异常:",e);

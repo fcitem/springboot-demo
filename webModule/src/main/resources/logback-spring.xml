@@ -6,7 +6,7 @@
 		<encoder>
 			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n
 			</pattern>
-			<charset>GBK</charset>
+			<!-- <charset>GBK</charset> -->
 		</encoder>
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
 		  <level>debug</level>
@@ -109,18 +109,8 @@
 			<maxHistory>30</maxHistory>
 			<totalSizeCap>3GB</totalSizeCap>
 		</rollingPolicy>
-		<!-- 以上配置表示每天生成一个日志文件，保存30天的日志文件 -->
-		<!--级别过滤器,根据日志级别进行过滤,如果日志级别等于配置级别,过滤器会根据onMath 和 onMismatch接收或拒绝日志 -->
-		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>DEBUG</level>   <!-- 设置过滤级别 -->
-			<!-- ACCEPT，日志会被立即处理，不再经过剩余过滤器 -->
-			<onMatch>ACCEPT</onMatch>  <!-- 配置符合过滤条件的操作 -->
-			<!-- DENY，日志将立即被抛弃不再经过其他过滤器 -->
-			<onMismatch>DENY</onMismatch>  <!-- 配置不符合过滤条件的操作 -->
-			<!-- NEUTRAL，有序列表里的下个过滤器过接着处理日志 -->
-		</filter>
 		<encoder>
-			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} %logger{35} - %msg%n
 			</pattern>
 		</encoder>
 	</appender>
@@ -134,46 +124,48 @@
 			<maxHistory>30</maxHistory>
 			<totalSizeCap>20MB</totalSizeCap>
 		</rollingPolicy>
-		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>DEBUG</level>   <!-- 设置过滤级别 -->
-			<!-- ACCEPT，日志会被立即处理，不再经过剩余过滤器 -->
-			<onMatch>ACCEPT</onMatch>  <!-- 配置符合过滤条件的操作 -->
-			<!-- DENY，日志将立即被抛弃不再经过其他过滤器 -->
-			<onMismatch>DENY</onMismatch>  <!-- 配置不符合过滤条件的操作 -->
-			<!-- NEUTRAL，有序列表里的下个过滤器过接着处理日志 -->
-		</filter>
+		<!-- <filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>   设置过滤级别
+			ACCEPT，日志会被立即处理，不再经过剩余过滤器
+			<onMatch>ACCEPT</onMatch>  配置符合过滤条件的操作
+			DENY，日志将立即被抛弃不再经过其他过滤器
+			<onMismatch>DENY</onMismatch>  配置不符合过滤条件的操作
+			NEUTRAL，有序列表里的下个过滤器过接着处理日志
+		</filter> -->
 		<encoder>
 			<pattern>
-				%d{HH:mm:ss.SSS} - %msg%n
+				%d{yyyy-MM-dd HH:mm:ss} %logger{35} - %msg%n
 			</pattern>
 		</encoder>
 	</appender>
 	<!-- mybatis日志文件配置 -->
+	<logger name="com.mybatis" additivity="false" level="debug">
+		<appender-ref ref="mybatis" />
+	</logger>
 	<logger name="com.apache.ibatis" additivity="false" level="debug">
-		<!-- <level>ALL</level>
-		<appender-ref ref="mybatis" /> -->
+		<appender-ref ref="mybatis" />
 	</logger>
 	<logger name="java.sql.Connection" additivity="false" level="debug">
 		<!-- <level>ALL</level>
 		<appender-ref ref="mybatis" /> -->
 	</logger>
-	<logger name="java.sql.Statement" additivity="false" level="debug">
-		<!-- <level>ALL</level>
-		<appender-ref ref="mybatis" /> -->
-	</logger>
-	<logger name="com.spring.boot.web.Controller" additivity="false" level="debug">
-	   <!--  <level>DEBUG</level> -->
-	    <appender-ref ref="test" />
-	</logger>
-	<!-- <logger name="java.sql.PreparedStatement" additivity="false">
+	<!-- <logger name="java.sql.Statement" additivity="false" level="debug">
 		<level>ALL</level>
 		<appender-ref ref="mybatis" />
 	</logger> -->
-	<!-- <logger name="org.springframework" level="DEBUG" additivity="false">
+	<logger name="com.spring.boot.web.Controller" additivity="false">
+	    <level>debug</level>
+	    <appender-ref ref="test" />
+	</logger>
+	<logger name="java.sql.PreparedStatement" additivity="false">
+		<level>debug</level>
+		<appender-ref ref="mybatis" />
+	</logger>
+	<logger name="org.springframework" level="DEBUG" additivity="false">
 		<appender-ref ref="DEBUG"></appender-ref>
 		<appender-ref ref="INFO"></appender-ref>
 		<appender-ref ref="ERROR"></appender-ref>
-	</logger> --> 
+	</logger> 
 	<root level="debug">
 		<appender-ref ref="STDOUT" />
 		<appender-ref ref="INFO" />

@@ -3,4 +3,4 @@
 /generatorConfig.xml
 /.settings/
 /webModule/log/
-webModule/src/main/resources/jdbc.properties
+/webModule/src/main/resources/jdbc.properties

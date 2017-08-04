@@ -82,6 +82,13 @@
 			<artifactId>shiro-spring</artifactId>
 			<version>1.2.4</version>
 		</dependency>
+		<!-- 打包时去掉tomcat -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
 	<!-- spring-boot提供的插件，打包成可执行程序 -->
 	<build>
@@ -91,6 +98,13 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<fork>true</fork><!-- 如果没有该项配置，肯呢个devtools不会起作用，即应用不会restart -->
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>

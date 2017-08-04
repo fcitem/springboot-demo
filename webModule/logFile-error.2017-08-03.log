@@ -1,0 +1,732 @@
+10501 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+30075 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30078 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30091 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30100 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30101 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30103 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30107 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30118 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30120 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30122 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30124 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30125 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30127 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30129 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30131 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30133 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30135 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30136 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30148 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30150 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30152 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30154 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30155 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30156 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30158 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30159 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30161 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30162 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30173 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30175 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+30185 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+60191 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+90299 [Druid-ConnectionPool-Create-1891974590] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12528, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12528, TNS:listener: all appropriate instances are blocking new connections
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+2214 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+2084 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+2035 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+2007 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+1940 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated

@@ -153,7 +153,8 @@
 		<level>ALL</level>
 		<appender-ref ref="mybatis" />
 	</logger> -->
-	<logger name="com.spring.boot.web.Controller" additivity="false">
+	<!--  additivity="false" 日志不往上层抛出导致日志膨胀,这儿记录了,控制台就不在输出-->
+	<logger name="com.spring.boot.web.Controller" additivity="true">
 	    <level>debug</level>
 	    <appender-ref ref="test" />
 	</logger>

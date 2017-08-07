@@ -16,7 +16,7 @@
 	<timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss" />
 
 	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
-		<file>log/file-${bySecond}.log</file>
+		<file>../logs/boot/file-${bySecond}.log</file>
 		<append>true</append>
 		<encoder>
 			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
@@ -26,7 +26,7 @@
 	<!-- 滚动文件 -->
 	<appender name="INFO"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>log/RollingFile-info.log</file>
+		<file>../logs/boot/RollingFile-info.log</file>
 		<!-- 当发生滚动时，决定RollingFileAppender的行为 TimeBasedRollingPolicy(根据时间来制定滚动策略) -->
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<fileNamePattern>logFile-info.%d{yyyy-MM-dd}.log</fileNamePattern>
@@ -51,7 +51,7 @@
 	</appender>
 	<appender name="ERROR"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>log/RollingFile-error.log</file>
+		<file>../logs/boot/RollingFile-error.log</file>
 		<!-- 当发生滚动时，决定RollingFileAppender的行为 TimeBasedRollingPolicy(根据时间来制定滚动策略) -->
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<fileNamePattern>logFile-error.%d{yyyy-MM-dd}.log</fileNamePattern>
@@ -76,7 +76,7 @@
 	</appender>
 	<appender name="DEBUG"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>log/RollingFile-debug.log</file>
+		<file>../logs/boot/RollingFile-debug.log</file>
 		<!-- 当发生滚动时，决定RollingFileAppender的行为 TimeBasedRollingPolicy(根据时间来制定滚动策略) -->
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<fileNamePattern>logFile-debug.%d{yyyy-MM-dd}.log</fileNamePattern>
@@ -101,7 +101,7 @@
 	</appender>
 	<appender name="test"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>log/test-debug.log</file>
+		<file>../logs/boot/test-debug.log</file>
 		<!-- 当发生滚动时，决定RollingFileAppender的行为 TimeBasedRollingPolicy(根据时间来制定滚动策略) -->
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<fileNamePattern>logFile-test.%d{yyyy-MM-dd}.log</fileNamePattern>
@@ -116,7 +116,7 @@
 	</appender>
 	<appender name="mybatis"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>log/mybatis.log</file>
+		<file>../logs/boot/mybatis.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- daily rollover -->
 			<fileNamePattern>logFile-mybatis.%d{yyyy-MM-dd}.log</fileNamePattern>

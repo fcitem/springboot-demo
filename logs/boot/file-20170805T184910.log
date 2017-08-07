@@ -1,0 +1,148 @@
+677  [main] INFO  com.spring.boot.StartBoot - Starting StartBoot on LAPTOP-I45ELRFD with PID 9204 (E:\eclipseProject\SpringBootDemo\webModule\target\classes started by fengchao in E:\eclipseProject\SpringBootDemo\webModule)
+677  [main] DEBUG com.spring.boot.StartBoot - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+678  [main] INFO  com.spring.boot.StartBoot - The following profiles are active: dev
+1142 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+1145 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+1190 [background-preinit] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+1450 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\eclipseProject\SpringBootDemo\webModule\target\classes\com\boot\mybatis\dao\RoleMapper.class]
+1451 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\eclipseProject\SpringBootDemo\webModule\target\classes\com\boot\mybatis\dao\SqlMapper.class]
+1460 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\eclipseProject\SpringBootDemo\webModule\target\classes\com\boot\mybatis\dao\UserMapper.class]
+1461 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\eclipseProject\SpringBootDemo\webModule\target\classes\com\boot\mybatis\dao\UserRoleMapper.class]
+1461 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'roleMapper' and 'com.boot.mybatis.dao.RoleMapper' mapperInterface
+1462 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
+1462 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'sqlMapper' and 'com.boot.mybatis.dao.SqlMapper' mapperInterface
+1462 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'sqlMapper'.
+1462 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.boot.mybatis.dao.UserMapper' mapperInterface
+1462 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+1462 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userRoleMapper' and 'com.boot.mybatis.dao.UserRoleMapper' mapperInterface
+1462 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
+2030 [main] WARN  o.a.s.w.m.DefaultWebSecurityManager - The org.apache.shiro.web.mgt.DefaultWebSecurityManager implementation expects SessionManager instances that implement the org.apache.shiro.web.session.mgt.WebSessionManager interface.  The configured instance is of type [org.apache.shiro.session.mgt.DefaultSessionManager] which does not implement this interface..  This may cause unexpected behavior.
+2046 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2063 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2066 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2066 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2067 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy50
+2068 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2069 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2069 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2070 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2070 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2180 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+2249 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2249 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2250 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2250 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2250 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy50
+2250 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2250 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2250 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2251 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2251 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2661 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2662 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2771 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2884 [localhost-startStop-1] DEBUG o.a.s.s.web.ShiroFilterFactoryBean - Creating Shiro Filter instance.
+2915 [localhost-startStop-1] DEBUG o.a.s.s.web.ShiroFilterFactoryBean - Found filter chain candidate filter 'requestContextFilter'
+2933 [localhost-startStop-1] DEBUG o.a.s.s.web.ShiroFilterFactoryBean - Found filter chain candidate filter 'hiddenHttpMethodFilter'
+2942 [localhost-startStop-1] DEBUG o.a.s.s.web.ShiroFilterFactoryBean - Found filter chain candidate filter 'httpPutFormContentFilter'
+2956 [localhost-startStop-1] DEBUG o.a.s.s.web.ShiroFilterFactoryBean - Found filter chain candidate filter 'applicationContextIdFilter'
+2997 [localhost-startStop-1] DEBUG o.a.s.s.web.ShiroFilterFactoryBean - Found filter chain candidate filter 'metricsFilter'
+3034 [localhost-startStop-1] DEBUG o.a.s.s.web.ShiroFilterFactoryBean - Found filter chain candidate filter 'webRequestLoggingFilter'
+3041 [localhost-startStop-1] DEBUG o.a.s.s.web.ShiroFilterFactoryBean - Found filter chain candidate filter 'characterEncodingFilter'
+3152 [main] DEBUG o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+3219 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+3219 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+3219 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+3220 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+3220 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+3220 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean
+3220 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean
+3282 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+3282 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: RoleExample.class
+3282 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: RoleExample$Criteria.class
+3282 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: RoleExample$Criterion.class
+3283 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: RoleExample$GeneratedCriteria.class
+3283 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+3283 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: UserExample.class
+3283 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: UserExample$Criteria.class
+3283 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: UserExample$Criterion.class
+3283 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: UserExample$GeneratedCriteria.class
+3284 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: UserRole.class
+3284 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: UserRoleExample.class
+3284 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: UserRoleExample$Criteria.class
+3284 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: UserRoleExample$Criterion.class
+3284 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: UserRoleExample$GeneratedCriteria.class
+3284 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean
+3285 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/Role.class
+3285 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/Role.class
+3296 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 :
+3296 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/RoleExample.class
+3297 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/RoleExample.class
+3307 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 O
+3308 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/RoleExample$Criteria.class
+3308 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/RoleExample$Criteria.class
+3320 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 ?
+3321 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/RoleExample$Criterion.class
+3321 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/RoleExample$Criterion.class
+3330 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 J	 
+3331 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/RoleExample$GeneratedCriteria.class
+3331 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/RoleExample$GeneratedCriteria.class
+3352 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   48
+3352 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/User.class
+3353 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/User.class
+3354 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 Q
+3355 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserExample.class
+3355 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserExample.class
+3357 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 O
+3358 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserExample$Criteria.class
+3358 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserExample$Criteria.class
+3373 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4z
+3374 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserExample$Criterion.class
+3374 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserExample$Criterion.class
+3385 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 J	 
+3385 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserExample$GeneratedCriteria.class
+3385 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserExample$GeneratedCriteria.class
+3418 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4?
+3418 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserRole.class
+3418 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserRole.class
+3439 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 *
+3439 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserRoleExample.class
+3440 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserRoleExample.class
+3450 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 O
+3450 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserRoleExample$Criteria.class
+3450 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserRoleExample$Criteria.class
+3451 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 ?
+3452 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserRoleExample$Criterion.class
+3452 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserRoleExample$Criterion.class
+3453 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 J	 
+3453 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserRoleExample$GeneratedCriteria.class
+3453 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/eclipseProject/SpringBootDemo/webModule/target/classes/com/boot/mybatis/bean/UserRoleExample$GeneratedCriteria.class
+3454 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ????   4 ?
+3454 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.Role matches criteria [is assignable to Object]
+3454 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.RoleExample matches criteria [is assignable to Object]
+3455 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.RoleExample$Criteria matches criteria [is assignable to Object]
+3456 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.RoleExample$Criterion matches criteria [is assignable to Object]
+3456 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.RoleExample$GeneratedCriteria matches criteria [is assignable to Object]
+3456 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.User matches criteria [is assignable to Object]
+3456 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.UserExample matches criteria [is assignable to Object]
+3456 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.UserExample$Criteria matches criteria [is assignable to Object]
+3459 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.UserExample$Criterion matches criteria [is assignable to Object]
+3459 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.UserExample$GeneratedCriteria matches criteria [is assignable to Object]
+3460 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.UserRole matches criteria [is assignable to Object]
+3460 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.UserRoleExample matches criteria [is assignable to Object]
+3460 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.UserRoleExample$Criteria matches criteria [is assignable to Object]
+3461 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.UserRoleExample$Criterion matches criteria [is assignable to Object]
+3461 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.boot.mybatis.bean.UserRoleExample$GeneratedCriteria matches criteria [is assignable to Object]
+3462 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.boot.mybatis.bean' for aliases
+3482 [main] DEBUG o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+3483 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+3590 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\eclipseProject\SpringBootDemo\webModule\target\classes\com\boot\mybatis\mapper\RoleMapper.xml]'
+3635 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\eclipseProject\SpringBootDemo\webModule\target\classes\com\boot\mybatis\mapper\UserMapper.xml]'
+3676 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\eclipseProject\SpringBootDemo\webModule\target\classes\com\boot\mybatis\mapper\UserRoleMapper.xml]'
+3745 [main] DEBUG o.a.s.s.LifecycleBeanPostProcessor - Initializing bean [getJdbcRealm]...
+3746 [main] DEBUG o.a.shiro.realm.AuthorizingRealm - No authorizationCache instance set.  Checking for a cacheManager...
+3746 [main] INFO  o.a.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+4916 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8011"]
+4927 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8011"]
+4950 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+4968 [main] INFO  com.spring.boot.StartBoot - Started StartBoot in 4.745 seconds (JVM running for 5.226)

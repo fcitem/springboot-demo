@@ -16,7 +16,7 @@ import com.alibaba.druid.pool.DruidDataSource;
  * @data 2017年6月21日
  */
 @Configuration
-@PropertySource("classpath:jdbc.properties")
+@PropertySource("classpath*:jdbc.properties")
 public class DataSourceConfig {
 
 	@Value("${dataSource.diverClassName}")

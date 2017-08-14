@@ -1,0 +1,6 @@
+492  [main] INFO  com.boot.shiro.server.StartBoot - Starting StartBoot on LAPTOP-I45ELRFD with PID 19992 (E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes started by fengchao in E:\eclipseProject\springboot-demo\springboot-shiro-server)
+493  [main] DEBUG com.boot.shiro.server.StartBoot - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+493  [main] INFO  com.boot.shiro.server.StartBoot - The following profiles are active: dev
+787  [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+790  [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+808  [background-preinit] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.

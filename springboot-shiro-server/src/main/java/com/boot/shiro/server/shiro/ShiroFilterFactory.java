@@ -119,7 +119,7 @@ public class ShiroFilterFactory {
 	 * @return cookie
 	 */
 	@Bean
-	private Cookie getSessionIdCookie() {
+	public Cookie getSessionIdCookie() {
 		// TODO Auto-generated method stub
 		SimpleCookie cookie=new SimpleCookie("sid");
 		cookie.setHttpOnly(true);
@@ -129,7 +129,7 @@ public class ShiroFilterFactory {
 		return cookie;
 	}
 	@Bean
-	private MySessionDao getSessionDao() {
+	public MySessionDao getSessionDao() {
 		return new MySessionDao();
 	}
 }

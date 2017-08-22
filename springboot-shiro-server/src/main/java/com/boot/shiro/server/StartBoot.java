@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @ComponentScan("com.boot.shiro.server")
-public class StartBoots {
+public class StartBoot {
 
 	/** 
 	 * 注入bean的方式修改内置tomcat的发布端口
@@ -29,6 +29,6 @@ public class StartBoots {
 		return factory;
 	}*/
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(StartBoots.class, args);
+        SpringApplication.run(StartBoot.class, args);
     }
 }

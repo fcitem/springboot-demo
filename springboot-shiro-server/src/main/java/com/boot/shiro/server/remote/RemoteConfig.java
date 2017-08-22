@@ -15,13 +15,13 @@ import com.boot.shiro.remote.Remoteable;
 public class RemoteConfig {
 
 	@Bean
-	private RemoteService getReoteService() {
+	public RemoteService getRemoteService() {
 		return new RemoteService();
 	}
 	@Bean(name="/remoteService")
-    private HttpInvokerServiceExporter getHttpInvokerServiceExporter() {
+    public HttpInvokerServiceExporter getHttpInvokerServiceExporter() {
 		HttpInvokerServiceExporter exporter=new HttpInvokerServiceExporter();
-		exporter.setService(getReoteService());
+		exporter.setService(getRemoteService());
 		exporter.setServiceInterface(Remoteable.class);
 		return exporter;
 	}

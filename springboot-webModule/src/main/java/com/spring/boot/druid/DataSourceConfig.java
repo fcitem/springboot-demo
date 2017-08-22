@@ -29,11 +29,10 @@ public class DataSourceConfig {
 	private String password;
 	@Value("${dataSource.maxActive}")
 	private int maxActive;
-	@Value("${dataSource.maxIdle}")
-	private int maxIdle;
+	@Value("${dataSource.minIdle}")
+	private int minIdle;
 	@Value("${dataSource.maxWait}")
 	private long maxWait; 
-	@SuppressWarnings("deprecation")
 	@Bean
 	public DruidDataSource dataSource() throws SQLException{
 		DruidDataSource dataSource=new DruidDataSource();
@@ -42,7 +41,7 @@ public class DataSourceConfig {
 		dataSource.setUsername(username);
 		dataSource.setPassword(password);
 		dataSource.setMaxActive(maxActive);
-		dataSource.setMaxIdle(maxIdle);
+		dataSource.setMinIdle(minIdle);
 		dataSource.setMaxWait(maxWait);
 		//设置为stat,不然无法显示SQL监控检测信息
 		dataSource.setFilters("stat");

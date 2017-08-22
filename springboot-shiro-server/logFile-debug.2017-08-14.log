@@ -1,0 +1,212 @@
+409  [main] DEBUG o.s.b.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/, file:/E:/eclipseProject/springboot-demo/springboot-shiro-core/target/classes/, file:/D:/DevelopSoft/Maven/Repository/org/springframework/boot/spring-boot-starter-web/1.5.3.RELEASE/spring-boot-starter-web-1.5.3.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/boot/spring-boot-starter/1.5.3.RELEASE/spring-boot-starter-1.5.3.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/boot/spring-boot/1.5.3.RELEASE/spring-boot-1.5.3.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/boot/spring-boot-autoconfigure/1.5.3.RELEASE/spring-boot-autoconfigure-1.5.3.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/boot/spring-boot-starter-logging/1.5.3.RELEASE/spring-boot-starter-logging-1.5.3.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar, file:/D:/DevelopSoft/Maven/Repository/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar, file:/D:/DevelopSoft/Maven/Repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar, file:/D:/DevelopSoft/Maven/Repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar, file:/D:/DevelopSoft/Maven/Repository/org/slf4j/log4j-over-slf4j/1.7.25/log4j-over-slf4j-1.7.25.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/spring-core/4.3.8.RELEASE/spring-core-4.3.8.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar, file:/D:/DevelopSoft/Maven/Repository/org/hibernate/hibernate-validator/5.3.5.Final/hibernate-validator-5.3.5.Final.jar, file:/D:/DevelopSoft/Maven/Repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/D:/DevelopSoft/Maven/Repository/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.jar, file:/D:/DevelopSoft/Maven/Repository/com/fasterxml/classmate/1.3.3/classmate-1.3.3.jar, file:/D:/DevelopSoft/Maven/Repository/com/fasterxml/jackson/core/jackson-databind/2.8.8/jackson-databind-2.8.8.jar, file:/D:/DevelopSoft/Maven/Repository/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar, file:/D:/DevelopSoft/Maven/Repository/com/fasterxml/jackson/core/jackson-core/2.8.8/jackson-core-2.8.8.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/spring-aop/4.3.8.RELEASE/spring-aop-4.3.8.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/spring-beans/4.3.8.RELEASE/spring-beans-4.3.8.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/spring-context/4.3.8.RELEASE/spring-context-4.3.8.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/spring-expression/4.3.8.RELEASE/spring-expression-4.3.8.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/springloaded/1.2.7.RELEASE/springloaded-1.2.7.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/boot/spring-boot-starter-actuator/1.5.3.RELEASE/spring-boot-starter-actuator-1.5.3.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/boot/spring-boot-actuator/1.5.3.RELEASE/spring-boot-actuator-1.5.3.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/com/alibaba/druid/1.1.0/druid-1.1.0.jar, file:/D:/DevelopSoft/Maven/Repository/org/mybatis/spring/boot/mybatis-spring-boot-starter/1.1.1/mybatis-spring-boot-starter-1.1.1.jar, file:/D:/DevelopSoft/Maven/Repository/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.1.1/mybatis-spring-boot-autoconfigure-1.1.1.jar, file:/D:/DevelopSoft/Maven/Repository/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar, file:/D:/DevelopSoft/Maven/Repository/org/mybatis/mybatis-spring/1.3.0/mybatis-spring-1.3.0.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/boot/spring-boot-starter-jdbc/1.5.3.RELEASE/spring-boot-starter-jdbc-1.5.3.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/apache/tomcat/tomcat-jdbc/8.5.14/tomcat-jdbc-8.5.14.jar, file:/D:/DevelopSoft/Maven/Repository/org/apache/tomcat/tomcat-juli/8.5.14/tomcat-juli-8.5.14.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/spring-jdbc/4.3.8.RELEASE/spring-jdbc-4.3.8.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/spring-tx/4.3.8.RELEASE/spring-tx-4.3.8.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar, file:/D:/DevelopSoft/Maven/Repository/org/apache/shiro/shiro-core/1.2.4/shiro-core-1.2.4.jar, file:/D:/DevelopSoft/Maven/Repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar, file:/D:/DevelopSoft/Maven/Repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar, file:/D:/DevelopSoft/Maven/Repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar, file:/D:/DevelopSoft/Maven/Repository/org/apache/shiro/shiro-web/1.2.4/shiro-web-1.2.4.jar, file:/D:/DevelopSoft/Maven/Repository/org/apache/shiro/shiro-spring/1.2.4/shiro-spring-1.2.4.jar, file:/D:/DevelopSoft/Maven/Repository/org/springframework/boot/spring-boot-starter-tomcat/1.5.3.RELEASE/spring-boot-starter-tomcat-1.5.3.RELEASE.jar, file:/D:/DevelopSoft/Maven/Repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.14/tomcat-embed-core-8.5.14.jar, file:/D:/DevelopSoft/Maven/Repository/org/apache/tomcat/embed/tomcat-embed-el/8.5.14/tomcat-embed-el-8.5.14.jar, file:/D:/DevelopSoft/Maven/Repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.14/tomcat-embed-websocket-8.5.14.jar]
+426  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'context.listener.classes' in any property source
+427  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'banner.image.location' in any property source
+428  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'banner.location' in any property source
+477  [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+477  [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+477  [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+477  [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+477  [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+497  [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+510  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'context.initializer.classes' in any property source
+510  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.config.name:application' in any property source
+510  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.config.name' in any property source
+510  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'vcap.application.name:application' in any property source
+510  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'vcap.application.name' in any property source
+511  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.application.name:application' in any property source
+511  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.application.name' in any property source
+511  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'PORT:null' in any property source
+511  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'PORT' in any property source
+511  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'server.port:null' in any property source
+511  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'server.port' in [applicationConfigurationProperties] with type [String]
+511  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.application.index:8012' in any property source
+512  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.application.index' in any property source
+512  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'vcap.application.instance_index:8012' in any property source
+512  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'vcap.application.instance_index' in any property source
+514  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+527  [main] DEBUG com.boot.shiro.server.StartBoots - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+527  [main] DEBUG o.s.boot.SpringApplication - Loading source class com.boot.shiro.server.StartBoots
+536  [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+572  [main] DEBUG o.s.b.c.c.ConfigFileApplicationListener - Activated profiles dev
+572  [main] DEBUG o.s.b.c.c.ConfigFileApplicationListener - Loaded config file 'file:/E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/application.properties' (classpath:/application.properties)
+572  [main] DEBUG o.s.b.c.c.ConfigFileApplicationListener - Loaded config file 'file:/E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/application-dev.properties' (classpath:/application-dev.properties)
+572  [main] DEBUG o.s.b.c.c.ConfigFileApplicationListener - Skipped (empty) config file 'file:/E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/application-dev.properties' (classpath:/application-dev.properties) for profile dev
+572  [main] DEBUG o.s.b.c.c.ConfigFileApplicationListener - Skipped (empty) config file 'file:/E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/application.properties' (classpath:/application.properties) for profile dev
+575  [main] DEBUG o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Bean factory for org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@358ee631: org.springframework.beans.factory.support.DefaultListableBeanFactory@74235045: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,startBoots]; root of factory hierarchy
+583  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+583  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+587  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+594  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+594  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+594  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' to allow for resolving potential circular references
+595  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+599  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+610  [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+611  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved classpath location [com/boot/shiro/server/] to resources [URL [file:/E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/]]
+611  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server]
+611  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server] for files matching pattern [E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/**/*.class]
+612  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\dao] for files matching pattern [E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/**/*.class]
+613  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\entity] for files matching pattern [E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/**/*.class]
+614  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\exception] for files matching pattern [E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/**/*.class]
+614  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\persistence] for files matching pattern [E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/**/*.class]
+615  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\remote] for files matching pattern [E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/**/*.class]
+615  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\service] for files matching pattern [E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/**/*.class]
+615  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\service\impl] for files matching pattern [E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/**/*.class]
+616  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\shiro] for files matching pattern [E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/**/*.class]
+616  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\util] for files matching pattern [E:/eclipseProject/springboot-demo/springboot-shiro-server/target/classes/com/boot/shiro/server/**/*.class]
+617  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/boot/shiro/server/**/*.class] to resources [file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\dao\SqlMapper.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\entity\User.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\entity\UserExample$Criteria.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\entity\UserExample$Criterion.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\entity\UserExample$GeneratedCriteria.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\entity\UserExample.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\exception\DefaultExceptionHandler.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\persistence\DataSourceConfig.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\persistence\DruidServletConfig.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\persistence\SessionFactoryConfig.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\remote\RemoteConfig.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\remote\RemoteService.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\service\AuthorizedService.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\service\impl\AuthorizedServiceImpl.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\ServletInitialize.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\shiro\MyRealm.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\shiro\MySessionDao.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\shiro\ShiroFilterFactory.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\StartBoots.class], file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\util\SqlUtil.class]]
+637  [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\exception\DefaultExceptionHandler.class]
+640  [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\persistence\DataSourceConfig.class]
+641  [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\persistence\DruidServletConfig.class]
+648  [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\persistence\SessionFactoryConfig.class]
+649  [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\remote\RemoteConfig.class]
+650  [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\service\impl\AuthorizedServiceImpl.class]
+651  [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes\com\boot\shiro\server\shiro\ShiroFilterFactory.class]
+665  [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [class path resource [jdbc.properties]] PropertySource with lowest search precedence
+688  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.boot.enableautoconfiguration' in any property source
+699  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+724  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+753  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+800  [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+806  [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.messages.basename' in any property source
+806  [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved classpath location [messages.properties] to resources []
+807  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+808  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+812  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+818  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+820  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+820  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+820  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+822  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+822  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+823  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+824  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+825  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+828  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+830  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+830  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+831  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+834  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+835  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+838  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+842  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+845  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+845  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+847  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+847  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+849  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+849  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+852  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+853  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+857  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+862  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+863  [background-preinit] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+865  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+865  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+873  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+879  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+885  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+885  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+886  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+895  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+895  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+900  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+905  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+906  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+907  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+908  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+908  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+908  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+909  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+909  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+910  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+910  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+912  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+918  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+918  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+919  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+919  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+921  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+929  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+930  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+941  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+942  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+944  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+944  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+945  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+945  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+945  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+946  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+947  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+947  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+947  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+952  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+953  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+954  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+954  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+955  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+955  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+955  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+955  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+964  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+965  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+966  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+967  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+968  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+968  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+969  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+970  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+971  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+971  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+972  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+973  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+976  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+978  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+984  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+984  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+985  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+987  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+987  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+991  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+991  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+992  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+992  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+993  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+997  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+998  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+998  [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1000 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1002 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1005 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1006 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1009 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1010 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1010 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1011 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1012 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1012 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1024 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1025 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1026 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1031 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1032 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1034 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1034 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1036 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1037 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1037 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1038 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1038 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1040 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1041 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1041 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1042 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1043 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1045 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1046 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1046 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1047 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1047 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1050 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'autoConfigurationReport'
+1052 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@74235045: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,startBoots,org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory,defaultExceptionHandler,dataSourceConfig,druidServletConfig,sessionFactoryConfig,remoteConfig,authorizedServiceImpl,shiroFilterFactory]; root of factory hierarchy
+1052 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Retrieved dependent beans for bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': [org.springframework.context.annotation.internalConfigurationAnnotationProcessor]

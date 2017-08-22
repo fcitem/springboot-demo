@@ -1,4 +1,0 @@
-517  [main] INFO  com.boot.shiro.server.StartBoots - Starting StartBoots on LAPTOP-I45ELRFD with PID 10404 (E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes started by fengchao in E:\eclipseProject\springboot-demo\springboot-shiro-server)
-527  [main] INFO  com.boot.shiro.server.StartBoots - The following profiles are active: dev
-572  [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@358ee631: startup date [Mon Aug 14 21:57:16 CST 2017]; root of context hierarchy
-802  [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final

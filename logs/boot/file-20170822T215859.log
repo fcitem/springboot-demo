@@ -1,3 +1,0 @@
-433  [main] INFO  com.boot.shiro.server.StartBoot - Starting StartBoot on LAPTOP-I45ELRFD with PID 6656 (E:\eclipseProject\springboot-demo\springboot-shiro-server\target\classes started by fengchao in E:\eclipseProject\springboot-demo\springboot-shiro-server)
-433  [main] DEBUG com.boot.shiro.server.StartBoot - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
-433  [main] INFO  com.boot.shiro.server.StartBoot - The following profiles are active: dev

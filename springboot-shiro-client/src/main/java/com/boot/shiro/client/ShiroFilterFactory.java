@@ -20,7 +20,7 @@ import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.env.Environment;
+import org.springframework.context.annotation.Import;
 import org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean;
 
 import com.boot.shiro.remote.Remoteable;
@@ -31,9 +31,10 @@ import com.boot.shiro.remote.Remoteable;
  * @data 2017年6月28日
  */
 @Configuration
+@Import(ClientConfig.class)
 public class ShiroFilterFactory {
 	@Autowired
-	Environment env;
+	ClientConfig conf;
 	/**
 	 * shiro过滤器入口
 	 * @author fengchao
@@ -44,14 +45,14 @@ public class ShiroFilterFactory {
 		ClientShiroFilterFactoryBean bean=new ClientShiroFilterFactoryBean();
 		SecurityManager manager=getSecurityManager(invokeproxy);
 		bean.setSecurityManager(manager);
-		bean.setLoginUrl(env.getProperty("client.login.url"));    //web请求登录拦截
-		bean.setSuccessUrl(env.getProperty("client.success.url"));
-		bean.setUnauthorizedUrl(env.getProperty("client.unauthorized.url"));
+		bean.setLoginUrl(conf.getLoginUrl());    //web请求登录拦截
+		bean.setSuccessUrl(conf.getSuccessUrl());
+		bean.setUnauthorizedUrl(conf.getUnauthorizedUrl());
 		HashMap<String, Filter> filtermap=new HashMap<>();
 		filtermap.put("authc", new ClientAuthenticationFilter());
 		bean.setFilters(filtermap);
-		bean.setFiltersStr(env.getProperty("client.filters"));
-		bean.setFilterChainDefinitionsStr(env.getProperty("client.filter.chain.definitions"));
+		bean.setFiltersStr(conf.getFilters());
+		bean.setFilterChainDefinitionsStr(conf.getDefinitions());
 		return bean;
 	}
 	/**
@@ -63,7 +64,7 @@ public class ShiroFilterFactory {
 	public SecurityManager getSecurityManager(HttpInvokerProxyFactoryBean invokeproxy){
 		DefaultWebSecurityManager securityManager=new DefaultWebSecurityManager();
 		ClientRealm realm=new ClientRealm();
-		realm.setAppKey(env.getProperty("client.app.key"));
+		realm.setAppKey(conf.getAppKey());
 		realm.setRemoteService((Remoteable) invokeproxy);
 		realm.setCachingEnabled(false);
 		securityManager.setRealm(realm);
@@ -119,19 +120,19 @@ public class ShiroFilterFactory {
 	 * @return cookie
 	 */
 	@Bean
-	private Cookie getSessionIdCookie() {
-		SimpleCookie cookie=new SimpleCookie(env.getProperty("client.session.id"));
+	public Cookie getSessionIdCookie() {
+		SimpleCookie cookie=new SimpleCookie(conf.getSessionId());
 		cookie.setHttpOnly(true);
 		cookie.setMaxAge(-1);      //设置会话级cookie,浏览器关闭失效
-		cookie.setDomain(env.getProperty("client.cookie.domain"));
-		cookie.setPath(env.getProperty("client.cookie.path"));
+		cookie.setDomain(conf.getCookieDomain());
+		cookie.setPath(conf.getCookiePath());
 		return cookie;
 	}
 	@Bean
-	private ClientSessionDAO getSessionDao(HttpInvokerProxyFactoryBean invokeproxy) {
+	public ClientSessionDAO getSessionDao(HttpInvokerProxyFactoryBean invokeproxy) {
 		ClientSessionDAO sessionDAO=new ClientSessionDAO();
 		sessionDAO.setSessionIdGenerator(new JavaUuidSessionIdGenerator());
-		sessionDAO.setAppKey(env.getProperty("client.app.key"));
+		sessionDAO.setAppKey(conf.getAppKey());
 		//TODO: 这儿需要注入远程服务
 		sessionDAO.setRemoteService((Remoteable) invokeproxy);
 		return sessionDAO;

@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @ControllerAdvice来自定义为特定控制器处理异常
  */
 @SpringBootApplication
-@ComponentScan(basePackages={"com.spring.boot","com.boot.mybatis.service"})
+@ComponentScan(basePackages={"com.spring.boot","com.boot.mybatis.service","com.boot.shiro.client"})
 public class BootStart {
 
 	/**

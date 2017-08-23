@@ -162,7 +162,7 @@
 		<level>debug</level>
 		<appender-ref ref="mybatis" />
 	</logger>
-	<logger name="org.springframework" level="DEBUG" additivity="false">
+	<logger name="org.springframework" level="DEBUG" additivity="true">
 		<appender-ref ref="DEBUG"></appender-ref>
 		<appender-ref ref="INFO"></appender-ref>
 		<appender-ref ref="ERROR"></appender-ref>

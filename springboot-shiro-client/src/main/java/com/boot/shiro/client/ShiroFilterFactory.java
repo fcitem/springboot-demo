@@ -17,7 +17,6 @@ import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.servlet.Cookie;
 import org.apache.shiro.web.servlet.SimpleCookie;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -26,24 +25,23 @@ import org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean;
 import com.boot.shiro.remote.Remoteable;
 
 /**
- * shiro集成配置
+ * shiro集成配置 注意@Configuration配置的类不能通过属性的方式注入@bean标记的bean，因为那个时候bean还不存在
  * @author fengchao
  * @data 2017年6月28日
  */
 @Configuration
-@Import(ClientConfig.class)
+@Import(value={RemoteConfig.class,ClientConfig.class})
 public class ShiroFilterFactory {
-	@Autowired
-	ClientConfig conf;
+	
 	/**
 	 * shiro过滤器入口
 	 * @author fengchao
 	 * @data 2017年6月28日
 	 */
 	@Bean
-	public ShiroFilterFactoryBean getShiroFilter(HttpInvokerProxyFactoryBean invokeproxy){
+	public ShiroFilterFactoryBean getShiroFilter(HttpInvokerProxyFactoryBean invokeproxy,ClientProperties conf){
 		ClientShiroFilterFactoryBean bean=new ClientShiroFilterFactoryBean();
-		SecurityManager manager=getSecurityManager(invokeproxy);
+		SecurityManager manager=getSecurityManager(invokeproxy,conf);
 		bean.setSecurityManager(manager);
 		bean.setLoginUrl(conf.getLoginUrl());    //web请求登录拦截
 		bean.setSuccessUrl(conf.getSuccessUrl());
@@ -61,14 +59,14 @@ public class ShiroFilterFactory {
 	 * @data 2017年6月28日
 	 */
 	@Bean
-	public SecurityManager getSecurityManager(HttpInvokerProxyFactoryBean invokeproxy){
+	public SecurityManager getSecurityManager(HttpInvokerProxyFactoryBean invokeproxy,ClientProperties conf){
 		DefaultWebSecurityManager securityManager=new DefaultWebSecurityManager();
 		ClientRealm realm=new ClientRealm();
 		realm.setAppKey(conf.getAppKey());
-		realm.setRemoteService((Remoteable) invokeproxy);
+//		realm.setRemoteService((Remoteable) (invokeproxy.getObject()));
 		realm.setCachingEnabled(false);
 		securityManager.setRealm(realm);
-		securityManager.setSessionManager(getSessionManager(invokeproxy));    //设置安全管理器
+		securityManager.setSessionManager(getSessionManager(invokeproxy,conf));    //设置安全管理器
 		return securityManager;
 	}
 	/**
@@ -94,15 +92,15 @@ public class ShiroFilterFactory {
 	 * @data 2017年6月28日
 	 */
 	@Bean
-	public SessionManager getSessionManager(HttpInvokerProxyFactoryBean invokeproxy){
+	public SessionManager getSessionManager(HttpInvokerProxyFactoryBean invokeproxy,ClientProperties conf){
 		DefaultWebSessionManager sessionManager=new DefaultWebSessionManager();
 		ExecutorServiceSessionValidationScheduler validationScheduler=new ExecutorServiceSessionValidationScheduler();
 		validationScheduler.setSessionManager(sessionManager);
 		sessionManager.setSessionValidationScheduler(validationScheduler);
 		sessionManager.setSessionValidationSchedulerEnabled(false);
-		sessionManager.setSessionDAO(getSessionDao(invokeproxy));
+		sessionManager.setSessionDAO(getSessionDao(invokeproxy,conf));
 		sessionManager.setDeleteInvalidSessions(false);    //删除失效session
-		sessionManager.setSessionIdCookie(getSessionIdCookie());
+		sessionManager.setSessionIdCookie(getSessionIdCookie(conf));
 		sessionManager.setSessionIdCookieEnabled(true);
 		return sessionManager;
 	}
@@ -120,7 +118,7 @@ public class ShiroFilterFactory {
 	 * @return cookie
 	 */
 	@Bean
-	public Cookie getSessionIdCookie() {
+	public Cookie getSessionIdCookie(ClientProperties conf) {
 		SimpleCookie cookie=new SimpleCookie(conf.getSessionId());
 		cookie.setHttpOnly(true);
 		cookie.setMaxAge(-1);      //设置会话级cookie,浏览器关闭失效
@@ -129,12 +127,12 @@ public class ShiroFilterFactory {
 		return cookie;
 	}
 	@Bean
-	public ClientSessionDAO getSessionDao(HttpInvokerProxyFactoryBean invokeproxy) {
+	public ClientSessionDAO getSessionDao(HttpInvokerProxyFactoryBean invokeproxy,ClientProperties conf) {
 		ClientSessionDAO sessionDAO=new ClientSessionDAO();
 		sessionDAO.setSessionIdGenerator(new JavaUuidSessionIdGenerator());
 		sessionDAO.setAppKey(conf.getAppKey());
 		//TODO: 这儿需要注入远程服务
-		sessionDAO.setRemoteService((Remoteable) invokeproxy);
+//		sessionDAO.setRemoteService((Remoteable) invokeproxy);
 		return sessionDAO;
 	}
 }

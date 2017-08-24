@@ -1,6 +1,7 @@
 package com.boot.shiro.client;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
@@ -42,51 +43,20 @@ public class ClientConfig {
 	@Value("${client.filter.chain.definitions}")
 	private String definitions;
 
-	public String getAppKey() {
-		return appKey;
+	@Bean
+	public ClientProperties getClientProperties() {
+		ClientProperties config=new ClientProperties();
+		config.setAppKey(appKey);
+		config.setCookieDomain(cookieDomain);
+		config.setCookiePath(cookiePath);
+		config.setDefinitions(definitions);
+		config.setFilters(filters);
+		config.setLoginUrl(loginUrl);
+		config.setRememberMeId(rememberMeId);
+		config.setServiceUrl(serviceUrl);
+		config.setSessionId(sessionId);
+		config.setSuccessUrl(successUrl);
+		config.setUnauthorizedUrl(unauthorizedUrl);
+		return config;
 	}
-
-	public String getServiceUrl() {
-		return serviceUrl;
-	}
-
-	public String getLoginUrl() {
-		return loginUrl;
-	}
-
-	public String getSuccessUrl() {
-		return successUrl;
-	}
-
-	public String getUnauthorizedUrl() {
-		return unauthorizedUrl;
-	}
-
-	public String getCookieDomain() {
-		return cookieDomain;
-	}
-
-	public String getCookiePath() {
-		return cookiePath;
-	}
-
-	public String getSessionId() {
-		return sessionId;
-	}
-
-	public String getRememberMeId() {
-		return rememberMeId;
-	}
-
-	public String getFilters() {
-		return filters;
-	}
-
-	public String getDefinitions() {
-		return definitions;
-	}
-	/*@Bean
-	public ClientConfig getClientCofig() {
-		return this;
-	}*/
 }

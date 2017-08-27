@@ -7,6 +7,7 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.boot.shiro.core.PermissionContext;
 import com.boot.shiro.remote.Remoteable;
@@ -18,7 +19,12 @@ import com.boot.shiro.remote.Remoteable;
  */
 public class ClientRealm extends AuthorizingRealm{
 
+	@Autowired
 	private Remoteable remoteService;
+	public ClientRealm() {
+		// TODO Auto-generated constructor stub
+		System.out.println("ss");
+	}
 	public String getAppKey() {
 		return appKey;
 	}

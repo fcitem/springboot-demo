@@ -11,7 +11,7 @@ import com.boot.shiro.remote.Remoteable;
 @Import(ClientConfig.class)
 public class RemoteConfig {
 	
-	@Bean
+	@Bean(name="Remoteable")
     public HttpInvokerProxyFactoryBean getHttpInvokerProxyFactoryBean(ClientProperties conf) {
 		HttpInvokerProxyFactoryBean invokeProxy=new HttpInvokerProxyFactoryBean();
 		invokeProxy.setServiceUrl(conf.getServiceUrl());

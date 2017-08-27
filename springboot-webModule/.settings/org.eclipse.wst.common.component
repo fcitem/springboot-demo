@@ -10,6 +10,9 @@
         <dependent-module archiveName="springboot-shiro-core-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/springboot-shiro-core/springboot-shiro-core">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="httpconnectutil-0.0.1-release.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/httpconnectutil/httpconnectutil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="webModule"/>
         <property name="java-output-path" value="/webModule/target/classes"/>
     </wb-module>

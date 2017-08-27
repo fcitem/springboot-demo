@@ -1,6 +1,7 @@
 package com.boot.shiro.client;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -8,7 +9,12 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration
 @PropertySource(value = { "classpath:shiro-client-default.properties",
 		"classpath:shiro-client.properties" }, ignoreResourceNotFound = true)
+@ConfigurationProperties
 public class ClientConfig {
+	
+	//Environment只有在@PropertySource下面才能注入
+	/*@Autowired
+    private Environment env;*/
 	
 	@Value("${client.app.key}")
 	private String appKey;

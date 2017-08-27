@@ -19,10 +19,7 @@ import org.apache.shiro.web.servlet.SimpleCookie;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 import org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean;
-
-import com.boot.shiro.remote.Remoteable;
 
 /**
  * shiro集成配置 注意@Configuration配置的类不能通过属性的方式注入@bean标记的bean，因为那个时候bean还不存在
@@ -30,7 +27,8 @@ import com.boot.shiro.remote.Remoteable;
  * @data 2017年6月28日
  */
 @Configuration
-@Import(value={RemoteConfig.class,ClientConfig.class})
+/*@EnableConfigurationProperties
+@Import(RemoteConfig.class)*/
 public class ShiroFilterFactory {
 	
 	/**

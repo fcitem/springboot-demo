@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Order(value=1)    
 public class StartAfterRunner implements CommandLineRunner{
+	
 
 	@Override
 	public void run(String... arg0) throws Exception {

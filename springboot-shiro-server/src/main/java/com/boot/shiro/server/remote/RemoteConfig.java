@@ -22,7 +22,7 @@ public class RemoteConfig {
 	public RemoteService getRemoteService() {
 		return new RemoteService();
 	}
-	@Bean
+	@Bean(name="/remoteService")
     public HttpInvokerServiceExporter getHttpInvokerServiceExporter() {
 		HttpInvokerServiceExporter exporter=new HttpInvokerServiceExporter();
 		exporter.setService(getRemoteService());

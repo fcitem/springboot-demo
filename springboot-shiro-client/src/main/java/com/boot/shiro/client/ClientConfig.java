@@ -1,68 +1,33 @@
 package com.boot.shiro.client;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 
 @Configuration
 @PropertySource(value = { "classpath:shiro-client-default.properties",
 		"classpath:shiro-client.properties" }, ignoreResourceNotFound = true)
-@ConfigurationProperties
 public class ClientConfig {
 	
-	//Environment只有在@PropertySource下面才能注入
-	/*@Autowired
-    private Environment env;*/
-	
-	@Value("${client.app.key}")
-	private String appKey;
-
-	@Value("${client.remote.service.url}")
-	private String serviceUrl;
-
-	@Value("${client.login.url}")
-	private String loginUrl;
-
-	@Value("${client.success.url}")
-	private String successUrl;
-
-	@Value("${client.unauthorized.url}")
-	private String unauthorizedUrl;
-
-	@Value("${client.cookie.domain}")
-	private String cookieDomain;
-
-	@Value("${client.cookie.path}")
-	private String cookiePath;
-	
-	@Value("${client.session.id}")
-	private String sessionId;
-	
-	@Value("${client.rememberMe.id}")
-	private String rememberMeId;
-	
-	@Value("${client.filters}")
-	private String filters;
-	
-	@Value("${client.filter.chain.definitions}")
-	private String definitions;
+	@Autowired
+    private Environment env;
 
 	@Bean
 	public ClientProperties getClientProperties() {
 		ClientProperties config=new ClientProperties();
-		config.setAppKey(appKey);
-		config.setCookieDomain(cookieDomain);
-		config.setCookiePath(cookiePath);
-		config.setDefinitions(definitions);
-		config.setFilters(filters);
-		config.setLoginUrl(loginUrl);
-		config.setRememberMeId(rememberMeId);
-		config.setServiceUrl(serviceUrl);
-		config.setSessionId(sessionId);
-		config.setSuccessUrl(successUrl);
-		config.setUnauthorizedUrl(unauthorizedUrl);
+		config.setAppKey(env.getProperty("client.app.key"));
+		config.setCookieDomain(env.getProperty("client.cookie.domain"));
+		config.setCookiePath(env.getProperty("client.cookie.path"));
+		config.setDefinitions(env.getProperty("client.filter.chain.definitions"));
+		config.setFilters(env.getProperty("client.filters"));
+		config.setLoginUrl(env.getProperty("client.login.url"));
+		config.setRememberMeId(env.getProperty("client.rememberMe.id"));
+		config.setServiceUrl(env.getProperty("client.remote.service.url"));
+		config.setSessionId(env.getProperty("client.session.id"));
+		config.setSuccessUrl(env.getProperty("client.success.url"));
+		config.setUnauthorizedUrl(env.getProperty("client.unauthorized.url"));
 		return config;
 	}
 }

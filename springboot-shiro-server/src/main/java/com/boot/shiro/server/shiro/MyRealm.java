@@ -26,7 +26,6 @@ public class MyRealm extends AuthorizingRealm {
 	@Autowired
 	private AuthorizedService authorizedService;
 	
-	
 	private PasswordMatcher matcher;
 	
 	public MyRealm(PasswordMatcher matcher) {

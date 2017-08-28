@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import org.apache.shiro.session.Session;
 import org.apache.shiro.session.mgt.eis.CachingSessionDAO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 
 import com.boot.shiro.remote.Remoteable;
 
@@ -13,6 +15,8 @@ import com.boot.shiro.remote.Remoteable;
  */
 public class ClientSessionDAO extends CachingSessionDAO{
 	
+	@Autowired
+	@Lazy
 	private Remoteable remoteService;
 	private String appKey;
 

@@ -33,11 +33,11 @@ public class MyTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		CountDownLatch latch = new CountDownLatch(10);
-		for (int i = 0; i < 10; i++) {
+		CountDownLatch latch = new CountDownLatch(50);
+		for (int i = 0; i < 50; i++) {
 			new Thread(new task(latch)).start();
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(300);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

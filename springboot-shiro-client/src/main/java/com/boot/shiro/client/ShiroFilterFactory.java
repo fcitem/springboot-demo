@@ -68,19 +68,12 @@ public class ShiroFilterFactory {
 	@Bean
 	public SecurityManager getSecurityManager(ClientProperties conf){
 		DefaultWebSecurityManager securityManager=new DefaultWebSecurityManager();
-		ClientRealm realm=getClientRealm();
+		ClientRealm realm=new ClientRealm();
 		realm.setAppKey(conf.getAppKey());
-		//TODO
-//		realm.setInvokerProxy(invoke);
 		realm.setCachingEnabled(false);
 		securityManager.setRealm(realm);
 		securityManager.setSessionManager(getSessionManager(conf));    //设置安全管理器
 		return securityManager;
-	}
-	@Bean
-	public ClientRealm getClientRealm(){
-		ClientRealm realm=new ClientRealm();
-		return realm;
 	}
 	/**
 	 * 密码匹配器
@@ -144,8 +137,10 @@ public class ShiroFilterFactory {
 		ClientSessionDAO sessionDAO=new ClientSessionDAO();
 		sessionDAO.setSessionIdGenerator(new JavaUuidSessionIdGenerator());
 		sessionDAO.setAppKey(conf.getAppKey());
-		//TODO: 这儿需要注入远程服务
-//		sessionDAO.setInvokerProxy(invoke);
 		return sessionDAO;
+	}
+	@Bean
+	public JavaUuidSessionIdGenerator getJavaUuidSessionIdGenerator() {
+		return new JavaUuidSessionIdGenerator();
 	}
 }

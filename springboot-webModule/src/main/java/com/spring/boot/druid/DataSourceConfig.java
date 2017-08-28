@@ -33,7 +33,12 @@ public class DataSourceConfig {
 	private int minIdle;
 	@Value("${dataSource.maxWait}")
 	private long maxWait; 
-	@Bean
+	/**
+	 * druid连接池需要配置close方法和init方法,否则监控页面会出错
+	 * @return
+	 * @throws SQLException
+	 */
+	@Bean(destroyMethod = "close", initMethod = "init")
 	public DruidDataSource dataSource() throws SQLException{
 		DruidDataSource dataSource=new DruidDataSource();
 		dataSource.setDriverClassName(driver);

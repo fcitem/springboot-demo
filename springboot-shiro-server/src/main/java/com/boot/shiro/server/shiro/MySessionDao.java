@@ -27,7 +27,10 @@ public class MySessionDao extends EnterpriseCacheSessionDAO{
 	@Override
 	protected Serializable doCreate(Session session) {
 		// TODO Auto-generated method stub
-		return super.doCreate(session);
+		Serializable sessionId = generateSessionId(session);
+        assignSessionId(session, sessionId);
+		super.doCreate(session);
+		return session.getId();
 	}
 
 	@Override

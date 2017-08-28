@@ -48,7 +48,9 @@ public class ClientSessionDAO extends CachingSessionDAO{
 
 	@Override
 	protected Serializable doCreate(Session session) {
-		return remoteService.createSession(session);
+		Serializable sessionId = remoteService.createSession(session);
+        assignSessionId(session, sessionId);
+        return sessionId;
 	}
 
 	@Override

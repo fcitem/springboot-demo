@@ -47,7 +47,7 @@ public class Controller {
 		return 100/0;
 	}
 	@RequestMapping("mybatis")
-	public void db(){
+	public String db(){
 		UserExample example=new UserExample();
 		Criteria cia=example.createCriteria();
 		cia.andUserNameEqualTo("fc");
@@ -55,6 +55,7 @@ public class Controller {
 		for (User user : list) {
 			System.out.println(user.getUserName());
 		}
+		return "fc";
 	}
 	@RequestMapping("register")
 	public void register(){

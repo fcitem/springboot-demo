@@ -1,1 +1,2 @@
 # SpringBootDemo
+注意对比baseModule里面开放的session远程调用接口方式

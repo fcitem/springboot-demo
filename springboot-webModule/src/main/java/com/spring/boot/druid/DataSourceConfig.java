@@ -48,11 +48,16 @@ public class DataSourceConfig {
 		dataSource.setMaxActive(maxActive);
 		dataSource.setMinIdle(minIdle);
 		dataSource.setMaxWait(maxWait);
+		dataSource.setTimeBetweenEvictionRunsMillis(60000);
+		dataSource.setTestOnBorrow(false);
+		dataSource.setTestOnReturn(true);
+		dataSource.setTestWhileIdle(true);
+		dataSource.setValidationQuery("SELECT 1 from dual");
 		//设置为stat,不然无法显示SQL监控检测信息
 		dataSource.setFilters("stat");
 		//orcle开启Pscache功能
-		dataSource.setPoolPreparedStatements(true);
-		dataSource.setMaxPoolPreparedStatementPerConnectionSize(100);
+		/*dataSource.setPoolPreparedStatements(true);
+		dataSource.setMaxPoolPreparedStatementPerConnectionSize(100);*/
 		return dataSource;
 	}
 }

@@ -90,6 +90,6 @@ public class UserRoleServiceImpl implements UserRoleService {
 	@Override
 	public List<Role> selectByLoginName(String loginId) {
 		// TODO Auto-generated method stub
-		return sqlMapper.selectByLoginName(loginId);
+		return null;
 	}
 }

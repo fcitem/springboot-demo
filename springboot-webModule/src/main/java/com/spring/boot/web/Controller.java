@@ -1,5 +1,6 @@
 package com.spring.boot.web;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.boot.mybatis.bean.User;
 import com.boot.mybatis.bean.UserExample;
 import com.boot.mybatis.bean.UserExample.Criteria;
+import com.boot.mybatis.dao.SqlMapper;
 import com.boot.mybatis.service.UserService;
 
 /**
@@ -31,6 +33,8 @@ public class Controller {
 	@Autowired UserService service;
 	
 	@Autowired PasswordMatcher passwordMatcher;
+	
+	@Autowired SqlMapper sqlmapper;
 	
 	private static Logger logger=LoggerFactory.getLogger(Controller.class);
 	@RequestMapping("/")
@@ -84,5 +88,10 @@ public class Controller {
 			logger.error("验证失败");
 			System.out.println(token.getPrincipal()+":验证失败");
 		}
+	}
+	@RequestMapping("sql")
+	public void testSql(){
+		List<HashMap<Object,List<Object>>> list=sqlmapper.selectByLoginName("");
+		System.out.println(list.size());
 	}
 }

@@ -18,7 +18,7 @@ public class MyTest {
 	public void testCheck(){
 		HttpConnect connect;
 		try {
-			connect = HttpConnectFacory.getHttpConnect("http","localhost","8011","/test/mybatis");
+			connect = HttpConnectFacory.getHttpConnect("http","localhost","8011","/test/sql");
 			connect.setHeader("Cookie","jeesite.session.id=c5e6909ff5f841c4bffd3fdbecf772b9");
 			connect.setConnectTimeout(60000);     //超时设置
 			connect.openConnect(HttpMethordEnum.POST);
@@ -64,7 +64,7 @@ class task implements Runnable {
 		// TODO Auto-generated method stub
 		try {
 			HttpConnect connect = HttpConnectFacory.getHttpConnect("http", "127.0.0.1", "8011",
-					"/test/mybatis");
+					"/test/sql");
 			/*connect.setHeader("cookie",
 					"JSESSIONID=A3CE96AE2C478B0AB21D14924D3813F8; jeesite.session.id=91ed9bd0604b46119ea71d78cd7dbc29");*/
 			connect.openConnect(HttpMethordEnum.POST);

@@ -15,7 +15,7 @@ import org.springframework.core.env.Environment;
  * @ControllerAdvice来自定义为特定控制器处理异常
  */
 //@SpringBootApplication
-@ComponentScan(basePackages={"com.spring.boot","com.boot.mybatis.service","com.boot.shiro.client"})
+@ComponentScan(basePackages={"com.spring.boot","com.boot.mybatis.service","com.boot.shiro.client","com.boot.mybatis.config"})
 @EnableAutoConfiguration
 @EnableConfigurationProperties
 public class BootStart {

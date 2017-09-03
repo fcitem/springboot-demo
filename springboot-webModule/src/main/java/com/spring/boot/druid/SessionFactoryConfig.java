@@ -2,6 +2,7 @@ package com.spring.boot.druid;
 
 import java.io.IOException;
 
+import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -16,6 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.TransactionManagementConfigurer;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.boot.mybatis.util.PluginIntercept;
 
 /**
  * Mybatis中的SessionFactory配置
@@ -47,6 +49,7 @@ public class SessionFactoryConfig implements TransactionManagementConfigurer{
 		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 		bean.setConfigLocation(resolver.getResource("classpath:mybatis-config.xml"));
 		bean.setMapperLocations(resolver.getResources("classpath:com/boot/mybatis/mapper/*.xml"));
+		bean.setPlugins(new Interceptor[] {new PluginIntercept()});
 		return bean;
 	}
 	@Bean

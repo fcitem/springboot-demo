@@ -95,7 +95,7 @@ public class ShiroFilterFactory {
 		ExecutorServiceSessionValidationScheduler validationScheduler=new ExecutorServiceSessionValidationScheduler();
 		validationScheduler.setInterval(2000);
 		validationScheduler.setSessionManager(sessionManager);
-		sessionManager.setSessionValidationScheduler(validationScheduler);
+//		sessionManager.setSessionValidationScheduler(validationScheduler);
 		sessionManager.setSessionDAO(getSessionDao());
 		sessionManager.setGlobalSessionTimeout(1800000);
 		sessionManager.setDeleteInvalidSessions(true);    //删除失效session

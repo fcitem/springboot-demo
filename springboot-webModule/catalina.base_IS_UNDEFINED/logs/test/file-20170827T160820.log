@@ -1,2 +1,0 @@
-192  [main] INFO  c.f.h.c.HttpConnectFacory$HttpConnect - 已从 http://localhost:8011/test/mybatis 建立连接
-651  [main] INFO  c.f.h.c.HttpConnectFacory$HttpConnect - 请求发送成功null

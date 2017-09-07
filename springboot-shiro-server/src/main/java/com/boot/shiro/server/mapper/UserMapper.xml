@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.boot.shiro.server.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.boot.shiro.server.entity.User" >
+    <id column="USER_ID" property="userId" jdbcType="VARCHAR" />
+    <result column="USER_NAME" property="userName" jdbcType="OTHER" />
+    <result column="LOGIN_ID" property="loginId" jdbcType="VARCHAR" />
+    <result column="USER_PWD" property="userPwd" jdbcType="OTHER" />
+    <result column="CREATE_TIME" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="STATUS" property="status" jdbcType="DECIMAL" />
+    <result column="EMAIL" property="email" jdbcType="OTHER" />
+    <result column="TELEPHONE" property="telephone" jdbcType="OTHER" />
+    <result column="USER_DESC" property="userDesc" jdbcType="OTHER" />
+  </resultMap>
+</mapper>

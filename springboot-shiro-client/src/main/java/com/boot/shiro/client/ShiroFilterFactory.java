@@ -71,10 +71,7 @@ public class ShiroFilterFactory {
 	@Bean
 	public SecurityManager getSecurityManager(ClientProperties conf){
 		DefaultWebSecurityManager securityManager=new DefaultWebSecurityManager();
-		ClientRealm realm=new ClientRealm();
-		realm.setAppKey(conf.getAppKey());
-		realm.setCachingEnabled(false);
-		securityManager.setRealm(realm);
+		securityManager.setRealm(getClientRealm(conf));
 		securityManager.setSessionManager(getSessionManager(conf));    //设置安全管理器
 		return securityManager;
 	}
@@ -123,6 +120,9 @@ public class ShiroFilterFactory {
 		return new LifecycleBeanPostProcessor();
 	}
 	
+	/**配置spring支持shiro的权限注解
+	 * @return
+	 */
 	@Bean
     @DependsOn({"getLifecycleBeanPostProcessor"})
     public DefaultAdvisorAutoProxyCreator advisorAutoProxyCreator(){
@@ -130,6 +130,10 @@ public class ShiroFilterFactory {
         advisorAutoProxyCreator.setProxyTargetClass(true);
         return advisorAutoProxyCreator;
     }
+	/**配置spring支持shiro的权限注解
+	 * @param securityManager
+	 * @return
+	 */
 	@Bean
     public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(SecurityManager securityManager){
         AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor = new AuthorizationAttributeSourceAdvisor();
@@ -155,6 +159,13 @@ public class ShiroFilterFactory {
 		sessionDAO.setSessionIdGenerator(new JavaUuidSessionIdGenerator());
 		sessionDAO.setAppKey(conf.getAppKey());
 		return sessionDAO;
+	}
+	@Bean
+	public ClientRealm getClientRealm(ClientProperties conf){
+		ClientRealm realm=new ClientRealm();
+		realm.setAppKey(conf.getAppKey());
+		realm.setCachingEnabled(false);
+		return realm;
 	}
 	@Bean
 	public JavaUuidSessionIdGenerator getJavaUuidSessionIdGenerator() {

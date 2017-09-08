@@ -1,5 +1,6 @@
 package com.boot.shiro.core;
 
+import java.io.Serializable;
 import java.util.Set;
 
 /**
@@ -7,8 +8,12 @@ import java.util.Set;
  * @author fengchao
  *
  */
-public class PermissionContext {
+public class PermissionContext implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Set<String> roles;
 	private Set<String> permissions;
 

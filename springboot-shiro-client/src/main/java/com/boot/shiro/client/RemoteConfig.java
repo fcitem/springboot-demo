@@ -1,7 +1,5 @@
 package com.boot.shiro.client;
 
-import org.apache.shiro.mgt.SecurityManager;
-import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,8 +13,6 @@ public class RemoteConfig {
 	@Autowired
 	private ClientProperties config;
 	
-	@Autowired
-	private SecurityManager securityManager;
 	@Bean
     public HttpInvokerProxyFactoryBean getHttpInvokerProxyFactoryBean() {
 		HttpInvokerProxyFactoryBean invokeProxy=new HttpInvokerProxyFactoryBean();

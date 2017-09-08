@@ -18,6 +18,7 @@ import org.springframework.util.ReflectionUtils;
 @Intercepts(@Signature(args= {Connection.class,Integer.class},method= "prepare",type= StatementHandler.class))
 public class PluginIntercept implements Interceptor{
 
+	@SuppressWarnings("unused")
 	@Override
 	public Object intercept(Invocation invocation) throws Throwable {
 		// TODO Auto-generated method stub

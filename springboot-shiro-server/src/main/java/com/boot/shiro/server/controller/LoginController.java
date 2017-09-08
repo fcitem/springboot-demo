@@ -1,6 +1,7 @@
 package com.boot.shiro.server.controller;
 
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,8 +18,9 @@ public class LoginController {
 		Subject sub=SecurityUtils.getSubject();
 		try{
 			sub.login(token);
-		}catch (Exception e) {
+		}catch (IncorrectCredentialsException e) {
 			// TODO: handle exception
+			System.out.println("登录失败");
 			e.printStackTrace();
 		}
 	}

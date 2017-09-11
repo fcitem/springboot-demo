@@ -1,0 +1,1220 @@
+2055 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+253551 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253576 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253584 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253588 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253592 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253597 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253602 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253605 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253609 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253612 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253617 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253620 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253623 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253628 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253633 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253635 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253637 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253638 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253639 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253642 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253645 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253646 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253648 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253661 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253666 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253668 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253670 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253671 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253673 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253675 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+253677 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+283679 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+313681 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 12505, state 66000
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:412)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:385)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1042)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:301)
+	... 10 common frames omitted
+343752 [Druid-ConnectionPool-Create-794940817] ERROR c.a.druid.pool.DruidDataSource - create connection error, url: jdbc:oracle:thin:@192.168.0.34:1521:orcl, errorCode 1033, state 08006
+java.sql.SQLRecoverableException: ORA-01033: ORACLE initialization or shutdown in progress
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:439)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:388)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:381)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:427)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:436)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:186)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOSESSKEY(T4CTTIoauthenticate.java:390)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:356)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:531)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:221)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:503)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:217)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1466)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2178)
+2561 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+9962 [main] ERROR o.a.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-8011"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.spring.boot.BootStart.main(BootStart.java:39)
+9962 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8011]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8011]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.spring.boot.BootStart.main(BootStart.java:39)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 common frames omitted
+9990 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8011 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8011, or configure this application to listen on another port.
+
+9990 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8011 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8011, or configure this application to listen on another port.
+
+2664 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+9483 [main] ERROR o.a.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-8012"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.boot.shiro.server.StartBoot.main(StartBoot.java:32)
+9484 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8012]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8012]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.boot.shiro.server.StartBoot.main(StartBoot.java:32)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 common frames omitted
+9558 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8012 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8012, or configure this application to listen on another port.
+
+2738 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+2475 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+7000 [main] ERROR o.a.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-8011"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.spring.boot.BootStart.main(BootStart.java:39)
+7001 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8011]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8011]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.spring.boot.BootStart.main(BootStart.java:39)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 common frames omitted
+7033 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8011 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8011, or configure this application to listen on another port.
+
+7033 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8011 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8011, or configure this application to listen on another port.
+
+1948 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated
+1008810 [http-nio-8012-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.io.NotSerializableException: com.boot.shiro.core.PermissionContext
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1548)
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1509)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.springframework.remoting.rmi.RemoteInvocationSerializingExporter.doWriteRemoteInvocationResult(RemoteInvocationSerializingExporter.java:178)
+	at org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter.writeRemoteInvocationResult(HttpInvokerServiceExporter.java:179)
+	at org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter.writeRemoteInvocationResult(HttpInvokerServiceExporter.java:154)
+	at org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter.handleRequest(HttpInvokerServiceExporter.java:81)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:51)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+1008861 [http-nio-8012-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:624)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:211)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:109)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:109)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:109)
+	at org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView.render(ErrorMvcAutoConfiguration.java:227)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:590)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:524)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:389)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:349)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+1008862 [http-nio-8012-exec-8] ERROR o.a.c.c.C.[Tomcat].[localhost] - Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:590)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:524)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:389)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:349)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:624)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:211)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:109)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:109)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:109)
+	at org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView.render(ErrorMvcAutoConfiguration.java:227)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 59 common frames omitted
+1968 [main] ERROR c.a.d.pool.DruidAbstractDataSource - maxIdle is deprecated

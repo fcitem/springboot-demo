@@ -3,4 +3,6 @@
 /generatorConfig.xml
 /.settings/
 /logs/
-/webModule/src/main/resources/jdbc.properties
+/springboot-webModule/src/main/resources/jdbc.properties
+/springboot-webModule/catalina.base_IS_UNDEFINED/
+/springboot-shiro-server/*.log

@@ -4,16 +4,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.authc.credential.PasswordMatcher;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.apache.shiro.authz.annotation.RequiresUser;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.boot.mybatis.bean.User;
@@ -39,8 +43,13 @@ public class Controller {
 	@Autowired SqlMapper sqlmapper;
 	
 	private static Logger logger=LoggerFactory.getLogger(Controller.class);
+	@RequiresRoles("user2")
 	@RequestMapping("/")
     private String home() {
+		Subject sub=SecurityUtils.getSubject();
+		if(sub.hasRole("role")){
+			System.out.println("s");
+		}
         return "Hello World!";
     }
 	/**
@@ -96,5 +105,14 @@ public class Controller {
 	public void testSql(){
 		List<HashMap<Object,List<Object>>> list=sqlmapper.selectByLoginName("");
 		System.out.println(list.size());
+	}
+	@RequestMapping(value="list",method=RequestMethod.GET)
+	@ResponseBody
+	public List<User> getUser(HttpServletRequest request){
+		UserExample example=new UserExample();
+		Criteria cia=example.createCriteria();
+//		cia.andUserNameEqualTo("fc");
+		List<User> list=service.selectByExample(example);
+		return list;
 	}
 }

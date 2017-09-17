@@ -3,6 +3,7 @@ package com.boot.shiro.server.dao;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.SelectProvider;
 
@@ -28,5 +29,6 @@ public interface SqlMapper {
 	 * @return
 	 */
 	@Select("select * from sys_user where login_id=#{username}")
+	@ResultMap("com.boot.shiro.server.UserMapper.BaseResultMap")
 	List<User> getUserInfo(String username);
 }

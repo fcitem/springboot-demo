@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.boot.shiro.server.entity.User;
 import com.boot.shiro.server.service.AuthorizedService;
+import com.boot.shiro.server.util.ContextUtil;
 
 /**自定义realm实现
  * @author fengchao
@@ -38,8 +39,10 @@ public class MyRealm extends AuthorizingRealm {
 	 */
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
-//		userService=ContextUtil.getBean(UserService.class);
 		String username=token.getPrincipal().toString();    //获取身份
+		if(authorizedService==null){
+			authorizedService=ContextUtil.getBean(AuthorizedService.class);
+		}
 		List<User> list=authorizedService.getUserInfo(username);
 		User user=null;
 		if(list.size()==0){

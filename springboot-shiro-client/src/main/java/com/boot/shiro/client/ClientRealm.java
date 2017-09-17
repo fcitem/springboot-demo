@@ -8,8 +8,6 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.stereotype.Service;
 
 import com.boot.shiro.core.PermissionContext;
 import com.boot.shiro.remote.Remoteable;
@@ -19,12 +17,10 @@ import com.boot.shiro.remote.Remoteable;
  * @author fengchao
  *
  */
-@Service
 public class ClientRealm extends AuthorizingRealm{
 
 	//这儿必须懒加载,HttpInvokerProxyFactoryBean需要在加载bean后才能注入
 	@Autowired
-	@Lazy
 	private Remoteable remoteService;
 
 	private String appKey;

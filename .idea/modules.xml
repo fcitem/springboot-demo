@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot-demo.iml" filepath="$PROJECT_DIR$/springboot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-shiro-client/springboot-shiro-client.iml" filepath="$PROJECT_DIR$/springboot-shiro-client/springboot-shiro-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-shiro-core/springboot-shiro-core.iml" filepath="$PROJECT_DIR$/springboot-shiro-core/springboot-shiro-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-shiro-server/springboot-shiro-server.iml" filepath="$PROJECT_DIR$/springboot-shiro-server/springboot-shiro-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-webModule/springboot-webModule.iml" filepath="$PROJECT_DIR$/springboot-webModule/springboot-webModule.iml" />
+    </modules>
+  </component>
+</project>

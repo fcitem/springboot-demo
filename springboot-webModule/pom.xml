@@ -26,6 +26,8 @@
     	<groupId>com.fc.http.util</groupId>
     	<artifactId>httpconnectutil</artifactId>
     	<version>0.0.1-release</version>
+        <scope>system</scope>
+        <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/httpconnectutil-0.0.1-release.jar</systemPath>
     </dependency>
   </dependencies>
   <build>

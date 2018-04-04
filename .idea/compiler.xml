@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-shiro-client" />
+        <module name="springboot-shiro-core" />
+        <module name="springboot-shiro-server" />
+        <module name="springboot-webModule" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-demo" target="1.8" />
+      <module name="springboot-shiro-client" target="1.8" />
+      <module name="springboot-shiro-core" target="1.8" />
+      <module name="springboot-shiro-server" target="1.8" />
+      <module name="springboot-webModule" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

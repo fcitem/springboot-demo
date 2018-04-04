@@ -158,16 +158,16 @@
 	    <level>debug</level>
 	    <appender-ref ref="test" />
 	</logger>
-	<logger name="java.sql.PreparedStatement" additivity="false">
+	<!--<logger name="java.sql.PreparedStatement" additivity="false">
 		<level>debug</level>
 		<appender-ref ref="mybatis" />
-	</logger>
-	<logger name="org.springframework" level="DEBUG" additivity="true">
+	</logger>-->
+	<!--<logger name="org.springframework" level="DEBUG" additivity="true">
 		<appender-ref ref="DEBUG"></appender-ref>
 		<appender-ref ref="INFO"></appender-ref>
 		<appender-ref ref="ERROR"></appender-ref>
-	</logger> 
-	<root level="debug">
+	</logger>-->
+	<root level="INFO">
 		<appender-ref ref="STDOUT" />
 		<appender-ref ref="INFO" />
 		<appender-ref ref="ERROR" />
